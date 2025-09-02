@@ -51,9 +51,10 @@ Sitio web personal que muestra mis proyectos, habilidades técnicas, experiencia
 ## Despliegue
 
 Este portfolio está desplegado en GitHub Pages:
-[https://jgastonmurua.github.io/Porfolio/](https://jgastonmurua.github.io/portfolio)
+[https://jgastonmurua.github.io/Porfolio/](https://jgastonmurua.github.io/Porfolio/)
 
 ## Licencia
 
 
 © 2025 Jorge Gastón Murúa. Todos los derechos reservados.
+
