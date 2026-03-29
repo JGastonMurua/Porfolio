@@ -2079,6 +2079,32 @@ section {
     opacity: 0.85;
 }
 
+.form-msg {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-align: center;
+    animation: fadeInUp 0.3s ease;
+}
+
+.form-msg--success {
+    background: rgba(0, 200, 100, 0.15);
+    border: 1.5px solid #00c864;
+    color: #00c864;
+}
+
+.form-msg--error {
+    background: rgba(255, 60, 60, 0.12);
+    border: 1.5px solid #ff3c3c;
+    color: #ff3c3c;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;

@@ -742,6 +742,51 @@
         indicator.textContent = sectionNames[current] || current;
     }
 
+    /* ========== Formulario de contacto ========== */
+    function initContactForm() {
+        const form = document.querySelector('.contact-form');
+        if (!form) return;
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const btn = form.querySelector('.form-submit');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            btn.disabled = true;
+
+            try {
+                const res = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (res.ok) {
+                    form.reset();
+                    showFormMsg(form, 'success', '¡Mensaje enviado! Te respondo en menos de 24 horas.');
+                } else {
+                    showFormMsg(form, 'error', 'Hubo un error al enviar. Probá contactarme por WhatsApp.');
+                }
+            } catch {
+                showFormMsg(form, 'error', 'Sin conexión. Probá contactarme por WhatsApp.');
+            } finally {
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }
+        });
+    }
+
+    function showFormMsg(form, type, text) {
+        const existing = form.querySelector('.form-msg');
+        if (existing) existing.remove();
+        const msg = document.createElement('div');
+        msg.className = `form-msg form-msg--${type}`;
+        msg.textContent = text;
+        form.appendChild(msg);
+        setTimeout(() => msg.remove(), 6000);
+    }
+
     /* ========== Init ========== */
     document.addEventListener('DOMContentLoaded', () => {
         initTheme();
@@ -752,6 +797,7 @@
         onScrollNav();
         updateSectionIndicator();
         loadVisitCounter();
+        initContactForm();
 
         const galaxy = initGalaxyGame();
 
