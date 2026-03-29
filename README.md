@@ -1,58 +1,109 @@
-# Portfolio Personal - Jorge Gastón Murúa
+# Portfolio Personal — Jorge Gastón Murúa
 
-Portfolio web profesional de Jorge Gastón Murúa, Técnico Superior en Desarrollo de Software.
+Portfolio web profesional de Jorge Gastón Murúa, Técnico Superior en Desarrollo de Software, especialista en automatizaciones con n8n e inteligencia artificial.
+
+🌐 **Live:** [jgastonmurua.github.io/Porfolio](https://jgastonmurua.github.io/Porfolio/)
+
+---
 
 ## Descripción
 
-Sitio web personal que muestra mis proyectos, habilidades técnicas, experiencia laboral y formación académica. Desarrollado con tecnologías web modernas y diseño responsive.
+Sitio web personal que muestra proyectos, habilidades técnicas, experiencia laboral, formación académica y servicios freelance. Desarrollado con tecnologías web modernas, diseño responsive y una estética cuidada con modo oscuro/claro.
+
+---
 
 ## Tecnologías utilizadas
 
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Diseño**: CSS Grid, Flexbox, Animaciones CSS
-- **Iconos**: Font Awesome
-- **Responsive**: Mobile-first design
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+- **Diseño:** CSS Grid, Flexbox, animaciones CSS, modo oscuro/claro
+- **Iconos:** Font Awesome 6
+- **Tipografías:** Google Fonts (Inter, Space Grotesk, Press Start 2P)
+- **Formulario de contacto:** Formspree
+- **Despliegue:** GitHub Pages
+
+---
 
 ## Características
 
-- Diseño moderno y profesional
-- Totalmente responsive
-- Animaciones suaves de scroll
-- Navegación interactiva
-- Optimizado para todos los dispositivos
-- Carga rápida y eficiente
+- Modo oscuro / claro con persistencia en localStorage
+- Animaciones de scroll con IntersectionObserver
+- Efecto typewriter en el hero
+- Partículas animadas en modo oscuro
+- Menú hamburguesa con drawer lateral en mobile
+- Indicador de sección actual al scrollear (mobile)
+- Formulario de contacto funcional vía Formspree
+- CV descargable en PDF
+- Juego arcade Galaxy Shooter integrado con controles pixel-art 8-bit
+- SEO optimizado: meta tags, Open Graph, Twitter Cards, Schema.org
+- Totalmente responsive (mobile-first)
 
-## Secciones incluidas
+---
 
-- **Inicio**: Presentación personal y contacto
-- **Sobre mí**: Background profesional y objetivos
-- **Proyectos**: Principales trabajos desarrollados
-- **Habilidades**: Stack tecnológico y competencias
-- **Experiencia**: Historial laboral
-- **Educación**: Formación académica y cursos
+## Secciones
+
+- **Inicio:** Presentación, contacto directo y descarga de CV
+- **Sobre mí:** Background profesional y objetivos
+- **Proyectos:** Trabajos desarrollados con links a demos y código
+- **Habilidades:** Stack tecnológico completo
+- **Experiencia:** Historial laboral
+- **Educación:** Formación académica y cursos
+- **Servicios:** Servicios freelance con precios en USD
+- **Contacto:** Formulario de contacto + información de contacto
+- **Arcade:** Juego Galaxy Shooter con controles pixel-art
+
+---
 
 ## Proyectos destacados
 
-- **Sala Chat Python**: Sistema de chat en tiempo real con sockets
-- **ConsumeAPI-MariaDB**: Integración de APIs con base de datos
-- **Gustashop**: E-commerce desarrollado en React
-- **CRUD-LOGIN**: Sistema de autenticación con PHP/MySQL
-- **TechStore**: E-commerce de tecnología
-- **Portfolio Personal**: Este mismo sitio web
+| Proyecto | Tecnologías | Demo |
+|---|---|---|
+| TechStore E-commerce | React, JS, PHP, MySQL | [Ver demo](https://jgastonmurua.github.io/techstore-ecommerce/) |
+| CRUD-LOGIN Sistema | PHP, MySQL | [Ver demo](https://escuelacrud.alwaysdata.net/views/login.php) |
+| Sala Chat Python | Python, Sockets, Threading | [Ver código](https://github.com/JGastonMurua/sala-chat-python) |
+| ConsumeAPI-MariaDB | Python, REST APIs, MariaDB | [Ver código](https://github.com/JGastonMurua/ConsumeAPI-MariaDB) |
+| Gustashop E-commerce | React, JavaScript, CSS3 | [Ver código](https://github.com/JGastonMurua/gustashop) |
+
+---
+
+## Servicios freelance
+
+| Servicio | Desde |
+|---|---|
+| Landing page profesional | $300 USD |
+| E-commerce completo | $1,500 USD |
+| Automatizaciones con n8n | $200 USD |
+| Chatbot con IA (Claude/GPT) | $500 USD |
+| Integración de APIs | $200 USD |
+| Mantenimiento web mensual | $100 USD/mes |
+
+---
 
 ## Contacto
 
-- **Email**: gastton.murua@gmail.com
-- **Teléfono**: +54 9 11 3048 4275
-- **GitHub**: [JGastonMurua](https://github.com/JGastonMurua)
-- **LinkedIn**: [jgastonmurua](https://linkedin.com/in/jgastonmurua)
+- **Email:** gaston.murua@gmail.com
+- **Teléfono:** +54 9 11 3048-4275
+- **WhatsApp:** [Contactar](https://wa.me/5491130484275)
+- **GitHub:** [JGastonMurua](https://github.com/JGastonMurua)
+- **LinkedIn:** [jgastonmurua](https://linkedin.com/in/jgastonmurua)
+- **Ubicación:** Merlo, Zona Oeste · Buenos Aires, Argentina
 
+---
 
-## Despliegue
+## Estructura del proyecto
 
-Este portfolio está desplegado en GitHub Pages:
-[https://jgastonmurua.github.io/portfolio](https://jgastonmurua.github.io/portfolio)
+```
+porfolio/
+├── index.html               # Página principal
+├── cv.html                  # Curriculum Vitae online
+├── CV — Jorge Gastón Murúa.pdf  # CV descargable
+├── styles.css               # Estilos globales
+├── script.js                # Lógica e interacciones
+├── mi-foto.png              # Foto de perfil
+└── README.md                # Este archivo
+```
+
+---
 
 ## Licencia
 
-© 2025 Jorge Gastón Murúa. Todos los derechos reservados.
+© 2026 Jorge Gastón Murúa. Todos los derechos reservados.

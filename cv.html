@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Jorge Gastón Murúa</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 48px;
+        }
+
+        /* ===== HEADER ===== */
+        .cv-header {
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .cv-name {
+            font-size: 26pt;
+            font-weight: 700;
+            color: #0a0a0a;
+            letter-spacing: -0.5px;
+        }
+
+        .cv-title {
+            font-size: 13pt;
+            color: #0066cc;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .cv-contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 24px;
+            margin-top: 10px;
+            font-size: 9.5pt;
+            color: #333;
+        }
+
+        .cv-contact a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        /* ===== SECCIONES ===== */
+        .cv-section {
+            margin-bottom: 20px;
+        }
+
+        .cv-section-title {
+            font-size: 11pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #0066cc;
+            border-bottom: 1.5px solid #0066cc;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+        }
+
+        /* ===== RESUMEN ===== */
+        .cv-summary {
+            font-size: 10.5pt;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* ===== EXPERIENCIA / EDUCACION ===== */
+        .cv-item {
+            margin-bottom: 14px;
+        }
+
+        .cv-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .cv-item-title {
+            font-weight: 700;
+            font-size: 10.5pt;
+            color: #0a0a0a;
+        }
+
+        .cv-item-period {
+            font-size: 9.5pt;
+            color: #555;
+            white-space: nowrap;
+        }
+
+        .cv-item-subtitle {
+            font-size: 10pt;
+            color: #0066cc;
+            font-weight: 600;
+            margin-top: 1px;
+        }
+
+        .cv-item-desc {
+            font-size: 10pt;
+            color: #333;
+            margin-top: 4px;
+            line-height: 1.55;
+        }
+
+        .cv-item-desc ul {
+            padding-left: 18px;
+            margin-top: 3px;
+        }
+
+        .cv-item-desc li {
+            margin-bottom: 2px;
+        }
+
+        /* ===== SKILLS ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 32px;
+        }
+
+        .skill-group-title {
+            font-weight: 700;
+            font-size: 10pt;
+            color: #0a0a0a;
+        }
+
+        .skill-group-items {
+            font-size: 10pt;
+            color: #333;
+        }
+
+        /* ===== PROYECTOS ===== */
+        .cv-project {
+            margin-bottom: 10px;
+        }
+
+        .cv-project-title {
+            font-weight: 700;
+            font-size: 10.5pt;
+            color: #0a0a0a;
+        }
+
+        .cv-project-title a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 9.5pt;
+            margin-left: 8px;
+        }
+
+        .cv-project-desc {
+            font-size: 10pt;
+            color: #333;
+            margin-top: 2px;
+            line-height: 1.5;
+        }
+
+        .cv-tags {
+            margin-top: 3px;
+            font-size: 9pt;
+            color: #555;
+            font-style: italic;
+        }
+
+        /* ===== PRINT ===== */
+        /* Botón imprimir */
+        .print-bar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: #f5f5f5;
+            border-bottom: 2px solid #ddd;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 24px;
+            font-family: 'Arial', sans-serif;
+            font-size: 13px;
+            z-index: 999;
+        }
+        .print-bar a {
+            background: #0066cc;
+            color: #fff;
+            border: none;
+            padding: 7px 20px;
+            font-weight: 700;
+            font-size: 13px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .print-bar a:hover { background: #0052aa; }
+        body { margin-top: 52px; }
+
+        @media print {
+            .print-bar { display: none; }
+            body { margin-top: 0; padding: 24px 36px; }
+            a { color: inherit !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="print-bar">
+        <span>Jorge Gastón Murúa — Curriculum Vitae</span>
+        <a href="CV — Jorge Gastón Murúa.pdf" download="CV — Jorge Gastón Murúa.pdf" style="background:#fff;color:#0066cc;border:none;padding:7px 20px;font-weight:700;font-size:13px;border-radius:4px;cursor:pointer;text-decoration:none;">⬇ Descargar PDF</a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="cv-header">
+        <div class="cv-name">Jorge Gastón Murúa</div>
+        <div class="cv-title">Desarrollador Web Fullstack Junior · Especialista en Automatizaciones e IA</div>
+        <div class="cv-contact">
+            <span>📍 Merlo, Buenos Aires, Argentina</span>
+            <span>📞 <a href="tel:+5491130484275">+54 9 11 3048-4275</a></span>
+            <span>✉ <a href="mailto:gaston.murua@gmail.com">gaston.murua@gmail.com</a></span>
+            <span>🔗 <a href="https://linkedin.com/in/jgastonmurua">linkedin.com/in/jgastonmurua</a></span>
+            <span>💻 <a href="https://github.com/JGastonMurua">github.com/JGastonMurua</a></span>
+            <span>🌐 <a href="https://jgastonmurua.github.io/Porfolio/">Portfolio online</a></span>
+        </div>
+    </header>
+
+    <!-- RESUMEN PROFESIONAL -->
+    <section class="cv-section">
+        <div class="cv-section-title">Resumen profesional</div>
+        <p class="cv-summary">
+            Técnico Superior en Desarrollo de Software (graduado diciembre 2024) con más de 10 años de experiencia previa en logística y operaciones. Me especializo en <strong>desarrollo web fullstack</strong>, <strong>automatizaciones con n8n</strong> e <strong>integración de inteligencia artificial</strong> (Claude API). Capaz de entregar soluciones técnicas completas de forma autónoma, con fuerte orientación a resultados y aprendizaje continuo. Busco mi primera oportunidad como Developer Junior y ofrezco servicios freelance de desarrollo y automatización.
+        </p>
+    </section>
+
+    <!-- HABILIDADES TÉCNICAS -->
+    <section class="cv-section">
+        <div class="cv-section-title">Habilidades técnicas</div>
+        <div class="skills-grid">
+            <div>
+                <div class="skill-group-title">Lenguajes</div>
+                <div class="skill-group-items">Python, JavaScript, PHP, HTML5, CSS3</div>
+            </div>
+            <div>
+                <div class="skill-group-title">Frameworks y librerías</div>
+                <div class="skill-group-items">React, Vue.js, Symfony, Bootstrap, Tailwind CSS, jQuery, PHPUnit, PHPMailer</div>
+            </div>
+            <div>
+                <div class="skill-group-title">Bases de datos</div>
+                <div class="skill-group-items">MySQL, MariaDB, PostgreSQL</div>
+            </div>
+            <div>
+                <div class="skill-group-title">Herramientas y plataformas</div>
+                <div class="skill-group-items">Git, GitHub, Docker, AWS, Vercel, GitHub Pages, AlwaysData</div>
+            </div>
+            <div>
+                <div class="skill-group-title">Automatización e IA</div>
+                <div class="skill-group-items">n8n, Claude API, integración de APIs REST, chatbots con IA</div>
+            </div>
+            <div>
+                <div class="skill-group-title">Otras áreas</div>
+                <div class="skill-group-items">IoT / Arduino, Ciberseguridad, QA Testing manual, Scrum, Kanban</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA LABORAL -->
+    <section class="cv-section">
+        <div class="cv-section-title">Experiencia laboral</div>
+
+        <div class="cv-item">
+            <div class="cv-item-header">
+                <div class="cv-item-title">Fundador y desarrollador</div>
+                <div class="cv-item-period">2025 – Actualidad</div>
+            </div>
+            <div class="cv-item-subtitle">GTresde — Emprendimiento de Impresión 3D (Merlo, Buenos Aires)</div>
+            <div class="cv-item-desc">
+                <ul>
+                    <li>Diseño, producción y comercialización de piezas impresas en 3D.</li>
+                    <li>Implementación de flujos de automatización con <strong>n8n</strong> para gestión de pedidos, seguimiento de clientes y comunicación automatizada.</li>
+                    <li>Desarrollo de herramientas internas con Python e integración de IA para optimizar procesos operativos y escalar el negocio.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-item">
+            <div class="cv-item-header">
+                <div class="cv-item-title">Chofer y operario logístico</div>
+                <div class="cv-item-period">2015 – 2025</div>
+            </div>
+            <div class="cv-item-subtitle">Lesber SRL (Buenos Aires, Argentina)</div>
+            <div class="cv-item-desc">
+                <ul>
+                    <li>Optimización de rutas y resolución de problemas operativos en tiempo real.</li>
+                    <li>Gestión de carga y descarga, atención a clientes y coordinación logística.</li>
+                    <li>Desarrollo de habilidades de trabajo bajo presión, toma de decisiones y comunicación efectiva.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-item">
+            <div class="cv-item-header">
+                <div class="cv-item-title">Cadete de logística</div>
+                <div class="cv-item-period">2011 – 2015</div>
+            </div>
+            <div class="cv-item-subtitle">Logística JOM (Buenos Aires, Argentina)</div>
+            <div class="cv-item-desc">
+                <ul>
+                    <li>Gestión y organización de paquetes utilizando software de seguimiento.</li>
+                    <li>Atención y resolución de incidencias con clientes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS DESTACADOS -->
+    <section class="cv-section">
+        <div class="cv-section-title">Proyectos destacados</div>
+
+        <div class="cv-project">
+            <div class="cv-project-title">
+                TechStore E-commerce
+                <a href="https://jgastonmurua.github.io/techstore-ecommerce/">Ver demo →</a>
+            </div>
+            <div class="cv-project-desc">E-commerce completo con catálogo de productos, carrito interactivo y diseño responsive. Backend en PHP con MySQL.</div>
+            <div class="cv-tags">React · JavaScript · PHP · MySQL</div>
+        </div>
+
+        <div class="cv-project">
+            <div class="cv-project-title">
+                CRUD-LOGIN Sistema
+                <a href="https://escuelacrud.alwaysdata.net/views/login.php">Ver demo →</a>
+            </div>
+            <div class="cv-project-desc">Sistema completo de autenticación y gestión de usuarios con operaciones CRUD, login seguro y manejo de sesiones en PHP.</div>
+            <div class="cv-tags">PHP · MySQL · Authentication · Sessions</div>
+        </div>
+
+        <div class="cv-project">
+            <div class="cv-project-title">
+                Sala Chat Python
+                <a href="https://github.com/JGastonMurua/sala-chat-python">Ver código →</a>
+            </div>
+            <div class="cv-project-desc">Sistema de chat en tiempo real cliente-servidor con manejo de múltiples usuarios simultáneos usando sockets y threading.</div>
+            <div class="cv-tags">Python · Sockets · Threading · Networking</div>
+        </div>
+
+        <div class="cv-project">
+            <div class="cv-project-title">
+                ConsumeAPI-MariaDB
+                <a href="https://github.com/JGastonMurua/ConsumeAPI-MariaDB">Ver código →</a>
+            </div>
+            <div class="cv-project-desc">Aplicación Python que consume APIs REST externas e integra los datos con base de datos MariaDB.</div>
+            <div class="cv-tags">Python · REST APIs · MariaDB · Data Processing</div>
+        </div>
+    </section>
+
+    <!-- EDUCACION -->
+    <section class="cv-section">
+        <div class="cv-section-title">Educación y formación</div>
+
+        <div class="cv-item">
+            <div class="cv-item-header">
+                <div class="cv-item-title">Técnico Superior en Desarrollo de Software</div>
+                <div class="cv-item-period">2021 – 2024</div>
+            </div>
+            <div class="cv-item-subtitle">Instituto de Formación Técnica Superior N°4 · Buenos Aires, Argentina</div>
+            <div class="cv-item-desc">Formación integral en desarrollo de software, metodologías ágiles y tecnologías modernas.</div>
+        </div>
+
+        <div class="cv-item">
+            <div class="cv-item-header">
+                <div class="cv-item-title">Cursos y certificaciones (2023 – 2025)</div>
+            </div>
+            <div class="cv-item-desc">
+                <ul>
+                    <li>React — TalentoTech (2025)</li>
+                    <li>PHP con MySQL — Tecno3F (2025)</li>
+                    <li>Node.js Development (2025)</li>
+                    <li>n8n y automatizaciones de flujos de trabajo (2025 · en curso)</li>
+                    <li>Ciberseguridad con IA (2025 · en curso)</li>
+                    <li>Marketing digital con IA (2025 · en curso)</li>
+                    <li>QA Testing manual y automatizado (2025)</li>
+                    <li>IoT y Robótica con Arduino — Tecno3F (2024)</li>
+                    <li>Fundamentos de AWS — AWS Academy (2023)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- IDIOMAS -->
+    <section class="cv-section">
+        <div class="cv-section-title">Idiomas</div>
+        <div class="cv-item-desc">
+            <strong>Español:</strong> Nativo &nbsp;|&nbsp; <strong>Inglés:</strong> Técnico (lectura y escritura de documentación)
+        </div>
+    </section>
+
+</body>
+</html>

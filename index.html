@@ -1,52 +1,120 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorge Gastón Murúa - Desarrollador Web Fullstack</title>
+    <meta name="description" content="Jorge Gastón Murúa, desarrollador web fullstack junior en Buenos Aires, Argentina. Especialista en automatizaciones con n8n, IA, desarrollo web freelance y ciberseguridad. Portfolio, proyectos y contacto.">
+    <meta name="keywords" content="Jorge Gastón Murúa, desarrollador web, fullstack junior, Buenos Aires, Argentina, n8n, automatizaciones, IA, inteligencia artificial, desarrollo web freelance, ciberseguridad, Python, React, PHP, portfolio">
+    <meta name="author" content="Jorge Gastón Murúa">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0f" id="meta-theme-color">
+    <meta name="geo.region" content="AR-C">
+    <meta name="geo.placename" content="Buenos Aires">
+    <title>Jorge Gastón Murúa | Desarrollador Web Fullstack Junior · Buenos Aires</title>
+    <link rel="canonical" href="https://jgastonmurua.github.io/Porfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:url" content="https://jgastonmurua.github.io/Porfolio/">
+    <meta property="og:title" content="Jorge Gastón Murúa | Desarrollador Web Fullstack Junior">
+    <meta property="og:description" content="Desarrollador web fullstack junior en Buenos Aires. Automatizaciones con n8n, IA, desarrollo freelance y ciberseguridad. Proyectos y servicios.">
+    <meta property="og:image" content="https://jgastonmurua.github.io/Porfolio/mi-foto.png">
+    <meta property="og:image:alt" content="Jorge Gastón Murúa, desarrollador web fullstack junior">
+    <meta property="og:site_name" content="Jorge Gastón Murúa — Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jorge Gastón Murúa | Desarrollador Web Fullstack Junior">
+    <meta name="twitter:description" content="Desarrollador web fullstack junior en Buenos Aires. n8n, IA, desarrollo freelance y ciberseguridad.">
+    <meta name="twitter:image" content="https://jgastonmurua.github.io/Porfolio/mi-foto.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jorge Gastón Murúa",
+        "jobTitle": "Desarrollador Web Fullstack Junior",
+        "url": "https://jgastonmurua.github.io/Porfolio/",
+        "image": "https://jgastonmurua.github.io/Porfolio/mi-foto.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Buenos Aires",
+            "addressCountry": "AR"
+        },
+        "knowsAbout": ["Desarrollo web", "n8n", "Automatizaciones", "Inteligencia artificial", "Ciberseguridad", "Python", "React", "PHP"],
+        "sameAs": [
+            "https://github.com/JGastonMurua",
+            "https://www.linkedin.com/in/jgastonmurua"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Navigation -->
+    <canvas id="particles-canvas" class="particles-canvas" aria-hidden="true"></canvas>
+
+    <button type="button" class="theme-toggle" id="theme-toggle" role="switch" aria-checked="true" aria-label="Cambiar a modo día">
+        <span class="theme-toggle__track"></span>
+        <span class="theme-toggle__thumb">
+            <i class="fas fa-moon theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true"></i>
+            <i class="fas fa-sun theme-toggle__icon theme-toggle__icon--light" aria-hidden="true"></i>
+        </span>
+    </button>
+
+    <div class="nav-backdrop" id="nav-backdrop"></div>
+    <div class="section-indicator" id="section-indicator">Inicio</div>
     <nav class="navbar">
-        <div class="nav-links">
-            <a href="#inicio" class="nav-link active">🏠 Inicio</a>
-            <a href="#sobre-mi" class="nav-link">🙋‍♂️ Sobre mí</a>
-            <a href="#proyectos" class="nav-link">🚀 Proyectos</a>
-            <a href="#habilidades" class="nav-link">⚡ Habilidades</a>
-            <a href="#experiencia" class="nav-link">💼 Experiencia</a>
-            <a href="#educacion" class="nav-link">🎓 Educación</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="#inicio" class="nav-link active">Inicio</a>
+            <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+            <a href="#proyectos" class="nav-link">Proyectos</a>
+            <a href="#habilidades" class="nav-link">Habilidades</a>
+            <a href="#experiencia" class="nav-link">Experiencia</a>
+            <a href="#educacion" class="nav-link">Educación</a>
+            <a href="#servicios" class="nav-link">Servicios</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
-        <div class="container">
+    <section class="hero section-scroll section--fade" id="inicio">
+        <div class="container hero__inner">
             <div class="profile-image">
                 <img src="mi-foto.png" alt="Jorge Gastón Murúa" id="profile-image">
             </div>
-            <h1>Jorge Gastón Murúa 👨‍💻</h1>
-            <p class="subtitle">🚀 Técnico Superior en Desarrollo de Software</p>
+            <h1 class="hero-heading">
+                <span class="sr-only">Jorge Gastón Murúa</span>
+                <span class="typewriter-text" id="typewriter-text" data-full="Jorge Gastón Murúa" aria-hidden="true"></span><span class="typewriter-caret" id="typewriter-caret" aria-hidden="true"></span>
+            </h1>
+            <p class="subtitle">Técnico Superior en Desarrollo de Software</p>
             
             <div class="contact-info">
-                <a href="mailto:gastton.murua@gmail.com">
-                    <i class="fas fa-envelope"></i> 📧 gastton.murua@gmail.com
+                <a href="mailto:gaston.murua@gmail.com">
+                    <i class="fas fa-envelope"></i> gaston.murua@gmail.com
                 </a>
                 <a href="tel:+5491130484275">
-                    <i class="fas fa-phone"></i> 📱 +54 9 11 3048 4275
+                    <i class="fas fa-phone"></i> +54 9 11 3048 4275
                 </a>
             </div>
 
             <div class="social-links">
-                <a href="https://github.com/JGastonMurua" class="social-btn" target="_blank">
+                <a href="https://github.com/JGastonMurua" class="social-btn" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://linkedin.com/in/jgastonmurua" class="social-btn" target="_blank">
+                <a href="https://linkedin.com/in/jgastonmurua" class="social-btn" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://wa.me/5491130484275" class="social-btn" target="_blank">
+                <a href="https://wa.me/5491130484275" class="social-btn" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            <div class="hero-cta">
+                <a href="cv.html" target="_blank" class="cv-download-btn">
+                    <i class="fas fa-download"></i> Descargar CV
                 </a>
             </div>
         </div>
@@ -56,44 +124,44 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="sobre-mi">
+    <section id="sobre-mi" class="section-scroll section--slide-left">
         <div class="container">
-            <h2 class="section-title">🙋‍♂️ Sobre mí</h2>
-            <div class="about-content">
-                <p>🎓 Técnico Superior en Desarrollo de Software graduado en diciembre 2024. Tengo una transición única desde el sector logístico al desarrollo de software, con <b> 10+ años de experiencia</b> resolviendo problemas complejos que me brindan una perspectiva única para crear soluciones eficientes.</p>
-                <p>💡 Actualmente especializándome en <b>QA Testing y Node.js</b>**, buscando mi primera oportunidad profesional como Desarrollador Junior. Apasionado por el aprendizaje continuo y abierto a colaboraciones y nuevos desafíos tecnológicos. 🚀</p>
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content glass-card">
+                <p>Soy <b>Técnico Superior en Desarrollo de Software</b>, graduado en diciembre 2024. Vengo del <b>sector logístico</b>, donde acumulé <b>más de 10 años de experiencia</b> en operaciones, coordinación y resolución de problemas en entornos dinámicos.</p>
+                <p>Me estoy especializando en <b>automatizaciones con n8n</b>, <b>IA con Claude</b>, <b>marketing digital con IA</b> y <b>ciberseguridad</b>. Tengo un <b>emprendimiento de impresión 3D</b> que hago crecer mediante automatizaciones para optimizar procesos y escalar el negocio.</p>
+                <p>Busco oportunidades como <b>Developer Junior</b> y ofrezco <b>servicios freelance de desarrollo web y automatizaciones</b> para quienes necesiten soluciones técnicas claras, mantenibles y alineadas a sus objetivos.</p>
+                <p>Merlo, Zona Oeste - Buenos Aires, Argentina.</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="proyectos">
+    <section id="proyectos" class="section-scroll section--rise">
         <div class="container">
-            <h2 class="section-title">🚀 Proyectos Principales</h2>
+            <h2 class="section-title">Proyectos principales</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
                         <i class="fab fa-python"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">💬 Sala Chat Python</h3>
+                        <h3 class="project-title">Sala Chat Python</h3>
                         <p class="project-description">
                             Sistema de chat en tiempo real desarrollado en Python para la cursada de Programación sobre redes. 
-                            Implementa comunicación cliente-servidor con sockets y manejo de múltiples usuarios simultáneos. 🐍💬
+                            Implementa comunicación cliente-servidor con sockets y manejo de múltiples usuarios simultáneos.
                         </p>
                         <div class="tech-tags">
-                            <span class="tech-tag">🐍 Python</span>
-                            <span class="tech-tag">🌐 Sockets</span>
-                            <span class="tech-tag">🔄 Threading</span>
-                            <span class="tech-tag">📡 Networking</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Sockets</span>
+                            <span class="tech-tag">Threading</span>
+                            <span class="tech-tag">Networking</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/sala-chat-python" class="project-link">
-                                <i class="fab fa-github"></i> 💻 Ver Código
+                                <i class="fab fa-github"></i> Ver código
                             </a>
                             <a href="#" class="project-link">
-                                <i class="fas fa-play"></i> 🎮 Demo
+                                <i class="fas fa-play"></i> Demo
                             </a>
                         </div>
                     </div>
@@ -104,23 +172,23 @@
                         <i class="fab fa-python"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">🔗 ConsumeAPI-MariaDB</h3>
+                        <h3 class="project-title">ConsumeAPI-MariaDB</h3>
                         <p class="project-description">
                             Aplicación Python que consume APIs externas e integra los datos con base de datos MariaDB. 
-                            Incluye procesamiento de datos, conexiones a APIs REST y gestión de base de datos. 📊🔗
+                            Incluye procesamiento de datos, conexiones a APIs REST y gestión de base de datos.
                         </p>
                         <div class="tech-tags">
-                            <span class="tech-tag">🐍 Python</span>
-                            <span class="tech-tag">🔌 API Integration</span>
-                            <span class="tech-tag">🗃️ MariaDB</span>
-                            <span class="tech-tag">📊 Data Processing</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">MariaDB</span>
+                            <span class="tech-tag">Data Processing</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/ConsumeAPI-MariaDB" class="project-link">
-                                <i class="fab fa-github"></i> 💻 Ver Código
+                                <i class="fab fa-github"></i> Ver código
                             </a>
                             <a href="#" class="project-link">
-                                <i class="fas fa-database"></i> 🗄️ Base de Datos
+                                <i class="fas fa-database"></i> Base de datos
                             </a>
                         </div>
                     </div>
@@ -131,23 +199,23 @@
                         <i class="fab fa-react"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">🛍️ Gustashop - E-commerce</h3>
+                        <h3 class="project-title">Gustashop - E-commerce</h3>
                         <p class="project-description">
                             E-commerce completo con React desarrollado como SPA (Single Page Application). 
-                            Incluye carrito de compras, gestión de productos, componentes reutilizables y estado global optimizado. ⚛️🛒
+                            Incluye carrito de compras, gestión de productos, componentes reutilizables y estado global optimizado.
                         </p>
                         <div class="tech-tags">
-                            <span class="tech-tag">⚛️ React</span>
-                            <span class="tech-tag">⚡ JavaScript</span>
-                            <span class="tech-tag">🎨 CSS3</span>
-                            <span class="tech-tag">📱 SPA</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">SPA</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/gustashop" class="project-link">
-                                <i class="fab fa-github"></i> 💾 Código Fuente
+                                <i class="fab fa-github"></i> Código fuente
                             </a>
                             <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> 🌐 Sitio Live
+                                <i class="fas fa-external-link-alt"></i> Sitio live
                             </a>
                         </div>
                     </div>
@@ -158,23 +226,23 @@
                         <i class="fab fa-php"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">🔐 CRUD-LOGIN Sistema</h3>
+                        <h3 class="project-title">CRUD-LOGIN Sistema</h3>
                         <p class="project-description">
                             Sistema completo de autenticación y gestión de usuarios desarrollado en PHP. 
-                            Implementa operaciones CRUD, sistema de login seguro, validaciones y manejo de sesiones. 🔒📋
+                            Implementa operaciones CRUD, sistema de login seguro, validaciones y manejo de sesiones.
                         </p>
                         <div class="tech-tags">
-                            <span class="tech-tag">🐘 PHP</span>
-                            <span class="tech-tag">🗄️ MySQL</span>
-                            <span class="tech-tag">🔐 Authentication</span>
-                            <span class="tech-tag">📋 CRUD Operations</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Authentication</span>
+                            <span class="tech-tag">CRUD Operations</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/CRUD-LOGIN" class="project-link">
-                                <i class="fab fa-github"></i> 🔍 Ver Código
+                                <i class="fab fa-github"></i> Ver código
                             </a>
                             <a href="https://escuelacrud.alwaysdata.net/views/login.php" class="project-link">
-                                <i class="fas fa-user-lock"></i> 🖥️ Demo Login
+                                <i class="fas fa-user-lock"></i> Demo login
                             </a>
                         </div>
                     </div>
@@ -185,23 +253,23 @@
                         <i class="fab fa-react"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">🛒 TechStore E-commerce</h3>
+                        <h3 class="project-title">TechStore E-commerce</h3>
                         <p class="project-description">
                             E-commerce de tecnología desarrollado con JavaScript y React. 
-                            Catálogo de productos tech, carrito interactivo, gestión de productos y diseño responsive moderno. 💻📱
+                            Catálogo de productos tech, carrito interactivo, gestión de productos y diseño responsive moderno.
                         </p>
                         <div class="tech-tags">
-                            <span class="tech-tag">⚡ JavaScript</span>
-                            <span class="tech-tag">⚛️ React</span>
-                            <span class="tech-tag">🐘 PHP</span>
-                            <span class="tech-tag">🗄️ MySQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/techstore-ecommerce" class="project-link">
-                                <i class="fab fa-github"></i> 📁 Repositorio
+                                <i class="fab fa-github"></i> Repositorio
                             </a>
                             <a href="https://jgastonmurua.github.io/techstore-ecommerce/" class="project-link">
-                                <i class="fas fa-shopping-cart"></i> 🛍️ Tienda Online
+                                <i class="fas fa-shopping-cart"></i> Tienda online
                             </a>
                         </div>
                     </div>
@@ -212,23 +280,23 @@
                         <i class="fas fa-user-circle"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">👨‍💻 JGastonMurua - Portfolio</h3>
+                        <h3 class="project-title">JGastonMurua - Portfolio</h3>
                         <p class="project-description">
                             Portafolio personal desarrollado para mostrar proyectos, habilidades y experiencia profesional. 
-                            Diseño responsive, animaciones fluidas y optimizado para conversión. 🚀✨
+                            Diseño responsive, animaciones fluidas y optimizado para conversión.
                         </p>
                         <div class="tech-tags">
-                            <span class="tech-tag">🌐 HTML5</span>
-                            <span class="tech-tag">🎨 CSS3</span>
-                            <span class="tech-tag">⚡ JavaScript</span>
-                            <span class="tech-tag">📱 Responsive Design</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/JGastonMurua" class="project-link">
-                                <i class="fab fa-github"></i> 🎨 Ver Portfolio
+                                <i class="fab fa-github"></i> Ver portfolio
                             </a>
                             <a href="https://jgastonmurua.github.io/Porfolio/" class="project-link">
-                                <i class="fas fa-globe"></i> 🌟 Sitio Web
+                                <i class="fas fa-globe"></i> Sitio web
                             </a>
                         </div>
                     </div>
@@ -237,112 +305,131 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="habilidades">
+    <section id="habilidades" class="section-scroll section--zoom">
         <div class="container">
-            <h2 class="section-title">⚡ Habilidades Técnicas</h2>
+            <h2 class="section-title">Habilidades técnicas</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>🔤 Lenguajes</h3>
+                <div class="skill-category glass-card">
+                    <h3>Lenguajes</h3>
                     <div class="skill-list">
-                        <span class="skill-item">🐍 Python</span>
-                        <span class="skill-item">🐘 PHP</span>
-                        <span class="skill-item">⚡ JavaScript</span>
-                        <span class="skill-item">🌐 HTML/CSS</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">PHP</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">HTML/CSS</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>🛠️ Frameworks & Librerías</h3>
+                <div class="skill-category glass-card">
+                    <h3>Frameworks y librerías</h3>
                     <div class="skill-list">
-                        <span class="skill-item">⚛️ React</span>
-                        <span class="skill-item">🅱️ Bootstrap</span>
-                        <span class="skill-item">🎨 Tailwind CSS</span>
-                        <span class="skill-item">🍭 SweetAlert2</span>
-                        <span class="skill-item">🧪 PHPUnit</span>
-                        <span class="skill-item">📧 PHPMailer</span>
-                        <span class="skill-item">🎼 Symfony</span>
-                        <span class="skill-item">💚 Vue.js</span>
-                        <span class="skill-item">⚡ jQuery</span>
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Bootstrap</span>
+                        <span class="skill-item">Tailwind CSS</span>
+                        <span class="skill-item">SweetAlert2</span>
+                        <span class="skill-item">PHPUnit</span>
+                        <span class="skill-item">PHPMailer</span>
+                        <span class="skill-item">Symfony</span>
+                        <span class="skill-item">Vue.js</span>
+                        <span class="skill-item">jQuery</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>🗄️ Bases de Datos</h3>
+                <div class="skill-category glass-card">
+                    <h3>Bases de datos</h3>
                     <div class="skill-list">
-                        <span class="skill-item">🐬 MySQL</span>
-                        <span class="skill-item">🗃️ MariaDB</span>
-                        <span class="skill-item">🐘 PostgreSQL</span>
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">MariaDB</span>
+                        <span class="skill-item">PostgreSQL</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>🔧 Herramientas</h3>
+                <div class="skill-category glass-card">
+                    <h3>Herramientas</h3>
                     <div class="skill-list">
-                        <span class="skill-item">🐙 Git/GitHub</span>
-                        <span class="skill-item">☁️ AWS</span>
-                        <span class="skill-item">▲ Vercel</span>
-                        <span class="skill-item">🐳 Docker</span>
-                        <span class="skill-item">📊 Jira</span>
+                        <span class="skill-item">Git/GitHub</span>
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">Vercel</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Jira</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>📋 Metodologías</h3>
+                <div class="skill-category glass-card">
+                    <h3>Automatización e IA</h3>
                     <div class="skill-list">
-                        <span class="skill-item">🏃‍♂️ Scrum</span>
-                        <span class="skill-item">📌 Kanban</span>
-                        <span class="skill-item">🧪 Testing Manual</span>
+                        <span class="skill-item">n8n</span>
+                        <span class="skill-item">Automatizaciones</span>
+                        <span class="skill-item">IA/Claude</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>🌟 Especialidades</h3>
+                <div class="skill-category glass-card">
+                    <h3>Metodologías</h3>
                     <div class="skill-list">
-                        <span class="skill-item">📡 IoT/Arduino</span>
-                        <span class="skill-item">🔗 APIs REST</span>
-                        <span class="skill-item">☁️ Cloud Computing</span>
-                        <span class="skill-item">🧪 QA Testing</span>
-                        <span class="skill-item">🤖 Robótica</span>
+                        <span class="skill-item">Scrum</span>
+                        <span class="skill-item">Kanban</span>
+                        <span class="skill-item">Testing manual</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>🌐 Plataformas & Hosting</h3>
+                <div class="skill-category glass-card">
+                    <h3>Especialidades</h3>
                     <div class="skill-list">
-                        <span class="skill-item">▲ Vercel</span>
-                        <span class="skill-item">🌍 AlwaysData</span>
-                        <span class="skill-item">📱 Blynk IoT</span>
-                        <span class="skill-item">🔧 GitHub Pages</span>
+                        <span class="skill-item">IoT/Arduino</span>
+                        <span class="skill-item">APIs REST</span>
+                        <span class="skill-item">Cloud Computing</span>
+                        <span class="skill-item">QA Testing</span>
+                        <span class="skill-item">Robótica</span>
+                        <span class="skill-item">Ciberseguridad</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <h3>Plataformas y hosting</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Vercel</span>
+                        <span class="skill-item">AlwaysData</span>
+                        <span class="skill-item">Blynk IoT</span>
+                        <span class="skill-item">GitHub Pages</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experiencia">
+    <section id="experiencia" class="section-scroll section--slide-right">
         <div class="container">
-            <h2 class="section-title">💼 Experiencia Laboral</h2>
+            <h2 class="section-title">Experiencia laboral</h2>
             <div class="timeline">
                 <div class="timeline-item timeline-left">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">🚛 Chofer y Operario</h3>
-                        <p class="timeline-period">Lesber SRL • 2015 - 2025 📅</p>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">Fundador — GTresde (Impresión 3D)</h3>
+                        <p class="timeline-period">GTresde · 2025 - Actualidad</p>
                         <p class="timeline-description">
-                            🗺️ Implementación de optimización de rutas, resolución de problemas en tiempo real, 
-                            interacción con clientes y gestión de carga y descarga. 📦✅
+                            Emprendimiento propio de impresión 3D. Diseño, producción y venta de piezas impresas en 3D.
+                            Optimización de procesos mediante automatizaciones para escalar el negocio.
                         </p>
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-right">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">🏃‍♂️ Cadete de Logística</h3>
-                        <p class="timeline-period">Logística JOM • 2011 - 2015 📅</p>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">Chofer y operario</h3>
+                        <p class="timeline-period">Lesber SRL · 2015 - 2025</p>
                         <p class="timeline-description">
-                            📦 Gestión y organización de paquetes, uso de software de seguimiento, 
-                            atención y resolución de problemas con clientes. 💻🤝
+                            Optimización de rutas, resolución de problemas en tiempo real, 
+                            interacción con clientes y gestión de carga y descarga.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">Cadete de logística</h3>
+                        <p class="timeline-period">Logística JOM · 2011 - 2015</p>
+                        <p class="timeline-description">
+                            Gestión y organización de paquetes, uso de software de seguimiento, 
+                            atención y resolución de incidencias con clientes.
                         </p>
                     </div>
                 </div>
@@ -350,84 +437,294 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="educacion">
+    <section id="educacion" class="section-scroll section--reveal-edu">
         <div class="container">
-            <h2 class="section-title">🎓 Educación & Formación</h2>
-            <div class="timeline">
+            <h2 class="section-title">Educación y formación</h2>
+            <div class="timeline timeline--edu">
                 <div class="timeline-item timeline-left">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">🎓 Técnico Superior en Desarrollo de Software</h3>
-                        <p class="timeline-period">Instituto de Formación Técnica Superior N°4 • 2021 - 2024 📅</p>
+                    <div class="timeline-content glass-card timeline-flip-inner">
+                        <h3 class="timeline-title">Técnico Superior en Desarrollo de Software</h3>
+                        <p class="timeline-period">Instituto de Formación Técnica Superior N°4 · 2021 - 2024</p>
                         <p class="timeline-description">
-                            💻 Formación integral en desarrollo de software con énfasis en metodologías ágiles y tecnologías modernas. ⚡🚀
+                            Formación integral en desarrollo de software con énfasis en metodologías ágiles y tecnologías modernas.
                         </p>
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-right">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">📚 Cursos en Progreso (2025)</h3>
-                        <p class="timeline-period">Actualidad • En curso</p>
+                    <div class="timeline-content glass-card timeline-flip-inner">
+                        <h3 class="timeline-title">n8n y automatizaciones</h3>
+                        <p class="timeline-period">2025 · EN CURSO</p>
                         <p class="timeline-description">
-                            🧪 <b>QA Testing</b> - Especializándome en testing manual y automatizado<br>
-                            💚 <b>Node.js Development</b> - Backend con JavaScript<br>
-                            🎯 <b>Objetivos</b>: Certificaciones y primera oportunidad IT
+                            Automatización de flujos de trabajo y procesos con n8n.
                         </p>
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-left">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">⚛️ Curso de React</h3>
-                        <p class="timeline-period">TalentoTech • 2025</p>
+                    <div class="timeline-content glass-card timeline-flip-inner">
+                        <h3 class="timeline-title">Ciberseguridad con IA</h3>
+                        <p class="timeline-period">2025 · EN CURSO</p>
                         <p class="timeline-description">
-                            🌐 Desarrollo de aplicaciones web modernas con React, componentes reutilizables y estado global.
+                            Seguridad informática, protección de sistemas y análisis de vulnerabilidades.
                         </p>
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-right">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">🐘 Curso de PHP con MySQL</h3>
-                        <p class="timeline-period">Tecno3F • 2025</p>
+                    <div class="timeline-content glass-card timeline-flip-inner">
+                        <h3 class="timeline-title">Marketing con IA</h3>
+                        <p class="timeline-period">2025 · EN CURSO</p>
                         <p class="timeline-description">
-                            💾 Desarrollo backend con PHP y gestión avanzada de bases de datos MySQL.
+                            Estrategias de marketing digital potenciadas con inteligencia artificial.
                         </p>
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-left">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">🤖 Curso de IoT & Robótica</h3>
-                        <p class="timeline-period">Tecno3F • 2024 📅</p>
+                    <div class="timeline-content glass-card timeline-flip-inner">
+                        <h3 class="timeline-title">QA Testing</h3>
+                        <p class="timeline-period">2025</p>
                         <p class="timeline-description">
-                            📡 Internet de las Cosas e Introducción a la Robótica con aplicaciones prácticas. 🔧⚡
+                            Testing manual y automatizado de software.
                         </p>
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-right">
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">☁️ Fundamentos de AWS</h3>
-                        <p class="timeline-period">AWS Academy • 2023 📅</p>
+                    <div class="timeline-content glass-card timeline-flip-inner">
+                        <h3 class="timeline-title">Node.js Development</h3>
+                        <p class="timeline-period">2025</p>
                         <p class="timeline-description">
-                            🌩️ Computación en la nube y servicios de Amazon Web Services. 🚀
+                            Desarrollo backend con JavaScript y Node.js.
                         </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-content glass-card timeline-flip-inner">
+                        <h3 class="timeline-title">React</h3>
+                        <p class="timeline-period">TalentoTech · 2025</p>
+                        <p class="timeline-description">
+                            Desarrollo de interfaces de usuario con React.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-content glass-card timeline-flip-inner">
+                        <h3 class="timeline-title">PHP con MySQL</h3>
+                        <p class="timeline-period">Tecno3F · 2025</p>
+                        <p class="timeline-description">
+                            Desarrollo backend con PHP y bases de datos MySQL.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-content glass-card timeline-flip-inner">
+                        <h3 class="timeline-title">Curso de IoT y robótica</h3>
+                        <p class="timeline-period">Tecno3F · 2024</p>
+                        <p class="timeline-description">
+                            Internet de las Cosas e introducción a la robótica con aplicaciones prácticas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-content glass-card timeline-flip-inner">
+                        <h3 class="timeline-title">Fundamentos de AWS</h3>
+                        <p class="timeline-period">AWS Academy · 2023</p>
+                        <p class="timeline-description">
+                            Computación en la nube y servicios de Amazon Web Services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-metas glass-card" aria-label="Metas 2026">
+                <h3 class="metas-title">Metas 2026</h3>
+                <ul class="metas-list">
+                    <li>Dominar Inteligencia Artificial completamente</li>
+                    <li>Certificaciones en IA y automatizaciones</li>
+                    <li>Especializarse en Ciberseguridad</li>
+                    <li>Consolidar servicios freelance de automatización</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section-scroll section--rise">
+        <div class="container">
+            <h2 class="section-title">Servicios</h2>
+            <p class="section-subtitle">Soluciones a medida para tu negocio. Trabajamos juntos desde la idea hasta el resultado.</p>
+            <div class="services-grid">
+
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="service-title">Landing Page Profesional</h3>
+                    <p class="service-desc">Sitio web de una página optimizado para convertir visitas en clientes. Diseño responsive, rápido y con SEO incluido.</p>
+                    <div class="service-price">desde <span>$300 USD</span></div>
+                    <a href="#contacto" class="service-cta">Consultar</a>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3 class="service-title">E-commerce Completo</h3>
+                    <p class="service-desc">Tienda online con catálogo, carrito, pagos y panel de administración. Lista para vender desde el primer día.</p>
+                    <div class="service-price">desde <span>$1,500 USD</span></div>
+                    <a href="#contacto" class="service-cta">Consultar</a>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="service-title">Automatizaciones con n8n</h3>
+                    <p class="service-desc">Automatizá procesos repetitivos: emails, reportes, sincronización entre sistemas, notificaciones y más.</p>
+                    <div class="service-price">desde <span>$200 USD</span></div>
+                    <a href="#contacto" class="service-cta">Consultar</a>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="service-title">Chatbot con IA</h3>
+                    <p class="service-desc">Asistente inteligente para tu negocio integrado con Claude o GPT. Responde consultas, califica leads y atiende 24/7.</p>
+                    <div class="service-price">desde <span>$500 USD</span></div>
+                    <a href="#contacto" class="service-cta">Consultar</a>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-plug"></i></div>
+                    <h3 class="service-title">Integración de APIs</h3>
+                    <p class="service-desc">Conectá tus herramientas y sistemas entre sí. Integraciones con cualquier API REST: pagos, CRM, logística, redes sociales.</p>
+                    <div class="service-price">desde <span>$200 USD</span></div>
+                    <a href="#contacto" class="service-cta">Consultar</a>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3 class="service-title">Mantenimiento Web</h3>
+                    <p class="service-desc">Soporte técnico mensual para tu sitio: actualizaciones, backups, corrección de errores y mejoras continuas.</p>
+                    <div class="service-price">desde <span>$100 USD</span><small>/mes</small></div>
+                    <a href="#contacto" class="service-cta">Consultar</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section-scroll section--fade">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Tenés un proyecto en mente? Contame de qué se trata y te respondo en menos de 24 horas.</p>
+            <div class="contact-grid">
+
+                <div class="contact-info-block glass-card">
+                    <h3>Hablemos</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:gaston.murua@gmail.com">gaston.murua@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+5491130484275">+54 9 11 3048-4275</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/5491130484275" target="_blank" rel="noopener noreferrer">WhatsApp directo</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/jgastonmurua" target="_blank" rel="noopener noreferrer">linkedin.com/in/jgastonmurua</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/JGastonMurua" target="_blank" rel="noopener noreferrer">github.com/JGastonMurua</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Merlo, Zona Oeste · Buenos Aires, Argentina</span>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" action="https://formspree.io/f/xojpedlq" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="¿De qué se trata?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contame tu proyecto o consulta..." required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-paper-plane"></i> Enviar mensaje
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ARCADE -->
+    <section id="arcade" class="game-section game-section--flappy section-scroll">
+        <div class="container">
+            <h2 class="section-title">Arcade</h2>
+            <div class="game-shell glass-card no-hover" style="max-width:500px;margin:0 auto;border-radius:24px;border:3px solid rgba(255,255,255,0.08);padding:1.2rem 1.2rem 1.5rem;">
+                <div class="game-hud" style="display:flex;justify-content:space-between;margin-bottom:0.5rem;font-family:'Press Start 2P',monospace;font-size:0.65rem;letter-spacing:1px;">
+                    <div class="game-hud__item">Puntaje: <span id="flappy-score">0</span></div>
+                    <div class="game-hud__item">Récord: <span id="flappy-record">0</span></div>
+                </div>
+                <canvas id="flappy-canvas" class="game-canvas" width="400" height="360" style="width:100%;border-radius:10px;border:2px solid rgba(255,255,255,0.1);display:block;" aria-label="Juego Flappy Bird"></canvas>
+                <p class="game-instructions" style="font-family:'Press Start 2P',monospace;font-size:0.5rem;text-align:center;margin:0.5rem 0 0.4rem;opacity:0.7;">Flechas/WASD + ESPACIO para disparar</p>
+                <div class="pixel-controls">
+                    <div class="pixel-dpad">
+                        <button type="button" class="pixel-btn pixel-btn--up" id="flappy-up">
+                            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 2L2 10h12z"/></svg>
+                        </button>
+                        <button type="button" class="pixel-btn pixel-btn--down" id="flappy-down">
+                            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 14l6-8H2z"/></svg>
+                        </button>
+                        <button type="button" class="pixel-btn pixel-btn--left" id="flappy-left">
+                            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M2 8l8-6v12z"/></svg>
+                        </button>
+                        <button type="button" class="pixel-btn pixel-btn--right" id="flappy-right">
+                            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M14 8L6 2v12z"/></svg>
+                        </button>
+                    </div>
+                    <div class="pixel-action-btns">
+                        <button type="button" class="pixel-btn pixel-btn--start" id="flappy-start">START</button>
+                        <button type="button" class="pixel-btn pixel-btn--fire" id="flappy-shoot">
+                            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 2l2 5h5l-4 3 1.5 5L8 12l-4.5 3L5 10 1 7h5z"/></svg>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Jorge Gastón Murúa. Desarrollado con 💜 y mucho ☕</p>
-            <p>🚀 ¡Hagamos realidad grandes proyectos juntos! 🌟</p>
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <p>&copy; 2026 Jorge Gastón Murúa. Desarrollado con dedicación.</p>
+                    <p>¿Trabajamos juntos? Contactame por email o LinkedIn.</p>
+                </div>
+                <div class="footer-right">
+                    <span id="visit-counter" class="visit-counter">Visitas al sitio: 0</span>
+                </div>
+            </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
