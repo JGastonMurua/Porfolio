@@ -53,6 +53,12 @@
 <body>
     <canvas id="particles-canvas" class="particles-canvas" aria-hidden="true"></canvas>
 
+    <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-opt lang-opt--active" id="lang-opt-es">ES</span>
+        <span class="lang-sep">|</span>
+        <span class="lang-opt" id="lang-opt-en">EN</span>
+    </button>
+
     <button type="button" class="theme-toggle" id="theme-toggle" role="switch" aria-checked="true" aria-label="Cambiar a modo día">
         <span class="theme-toggle__track"></span>
         <span class="theme-toggle__thumb">
@@ -70,14 +76,14 @@
             <span></span>
         </button>
         <div class="nav-links" id="nav-links">
-            <a href="#inicio" class="nav-link active">Inicio</a>
-            <a href="#sobre-mi" class="nav-link">Sobre mí</a>
-            <a href="#proyectos" class="nav-link">Proyectos</a>
-            <a href="#habilidades" class="nav-link">Habilidades</a>
-            <a href="#experiencia" class="nav-link">Experiencia</a>
-            <a href="#educacion" class="nav-link">Educación</a>
-            <a href="#servicios" class="nav-link">Servicios</a>
-            <a href="#contacto" class="nav-link">Contacto</a>
+            <a href="#inicio" class="nav-link active" data-i18n="nav.inicio">Inicio</a>
+            <a href="#sobre-mi" class="nav-link" data-i18n="nav.sobre-mi">Sobre mí</a>
+            <a href="#proyectos" class="nav-link" data-i18n="nav.proyectos">Proyectos</a>
+            <a href="#habilidades" class="nav-link" data-i18n="nav.habilidades">Habilidades</a>
+            <a href="#experiencia" class="nav-link" data-i18n="nav.experiencia">Experiencia</a>
+            <a href="#educacion" class="nav-link" data-i18n="nav.educacion">Educación</a>
+            <a href="#servicios" class="nav-link" data-i18n="nav.servicios">Servicios</a>
+            <a href="#contacto" class="nav-link" data-i18n="nav.contacto">Contacto</a>
         </div>
     </nav>
 
@@ -90,11 +96,11 @@
                 <span class="sr-only">Jorge Gastón Murúa</span>
                 <span class="typewriter-text" id="typewriter-text" data-full="Jorge Gastón Murúa" aria-hidden="true"></span><span class="typewriter-caret" id="typewriter-caret" aria-hidden="true"></span>
             </h1>
-            <p class="subtitle">Técnico Superior en Desarrollo de Software</p>
+            <p class="subtitle" data-i18n="hero.subtitle">Técnico Superior en Desarrollo de Software</p>
             
             <div class="contact-info">
-                <a href="mailto:gaston.murua@gmail.com">
-                    <i class="fas fa-envelope"></i> gaston.murua@gmail.com
+                <a href="mailto:gastton.murua@gmail.com">
+                    <i class="fas fa-envelope"></i> gastton.murua@gmail.com
                 </a>
                 <a href="tel:+5491130484275">
                     <i class="fas fa-phone"></i> +54 9 11 3048 4275
@@ -113,7 +119,7 @@
                 </a>
             </div>
             <div class="hero-cta">
-                <a href="cv.html" target="_blank" class="cv-download-btn">
+                <a href="cv.html" target="_blank" class="cv-download-btn" data-i18n-html="hero.cv">
                     <i class="fas fa-download"></i> Descargar CV
                 </a>
             </div>
@@ -126,19 +132,19 @@
 
     <section id="sobre-mi" class="section-scroll section--slide-left">
         <div class="container">
-            <h2 class="section-title">Sobre mí</h2>
+            <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
             <div class="about-content glass-card">
-                <p>Soy <b>Técnico Superior en Desarrollo de Software</b>, graduado en diciembre 2024. Vengo del <b>sector logístico</b>, donde acumulé <b>más de 10 años de experiencia</b> en operaciones, coordinación y resolución de problemas en entornos dinámicos.</p>
-                <p>Me estoy especializando en <b>automatizaciones con n8n</b>, <b>IA con Claude</b>, <b>marketing digital con IA</b> y <b>ciberseguridad</b>. Tengo un <b>emprendimiento de impresión 3D</b> que hago crecer mediante automatizaciones para optimizar procesos y escalar el negocio.</p>
-                <p>Busco oportunidades como <b>Developer Junior</b> y ofrezco <b>servicios freelance de desarrollo web y automatizaciones</b> para quienes necesiten soluciones técnicas claras, mantenibles y alineadas a sus objetivos.</p>
-                <p>Merlo, Zona Oeste - Buenos Aires, Argentina.</p>
+                <p data-i18n-html="about.p1">Soy <b>Técnico Superior en Desarrollo de Software</b>, graduado en diciembre 2024. Vengo del <b>sector logístico</b>, donde acumulé <b>más de 10 años de experiencia</b> en operaciones, coordinación y resolución de problemas en entornos dinámicos.</p>
+                <p data-i18n-html="about.p2">Me estoy especializando en <b>automatizaciones con n8n</b>, <b>IA con Claude</b>, <b>marketing digital con IA</b> y <b>ciberseguridad</b>. Tengo un <b>emprendimiento de impresión 3D</b> que hago crecer mediante automatizaciones para optimizar procesos y escalar el negocio.</p>
+                <p data-i18n-html="about.p3">Busco oportunidades como <b>Developer Junior</b> y ofrezco <b>servicios freelance de desarrollo web y automatizaciones</b> para quienes necesiten soluciones técnicas claras, mantenibles y alineadas a sus objetivos.</p>
+                <p data-i18n="about.p4">Merlo, Zona Oeste - Buenos Aires, Argentina.</p>
             </div>
         </div>
     </section>
 
     <section id="proyectos" class="section-scroll section--rise">
         <div class="container">
-            <h2 class="section-title">Proyectos principales</h2>
+            <h2 class="section-title" data-i18n="projects.title">Proyectos principales</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
@@ -146,8 +152,8 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Sala Chat Python</h3>
-                        <p class="project-description">
-                            Sistema de chat en tiempo real desarrollado en Python para la cursada de Programación sobre redes. 
+                        <p class="project-description" data-i18n="proj.chat.desc">
+                            Sistema de chat en tiempo real desarrollado en Python para la cursada de Programación sobre redes.
                             Implementa comunicación cliente-servidor con sockets y manejo de múltiples usuarios simultáneos.
                         </p>
                         <div class="tech-tags">
@@ -158,10 +164,10 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/sala-chat-python" class="project-link">
-                                <i class="fab fa-github"></i> Ver código
+                                <i class="fab fa-github"></i> <span data-i18n="link.ver-codigo">Ver código</span>
                             </a>
                             <a href="#" class="project-link">
-                                <i class="fas fa-play"></i> Demo
+                                <i class="fas fa-play"></i> <span data-i18n="link.demo">Demo</span>
                             </a>
                         </div>
                     </div>
@@ -173,8 +179,8 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">ConsumeAPI-MariaDB</h3>
-                        <p class="project-description">
-                            Aplicación Python que consume APIs externas e integra los datos con base de datos MariaDB. 
+                        <p class="project-description" data-i18n="proj.api.desc">
+                            Aplicación Python que consume APIs externas e integra los datos con base de datos MariaDB.
                             Incluye procesamiento de datos, conexiones a APIs REST y gestión de base de datos.
                         </p>
                         <div class="tech-tags">
@@ -185,10 +191,10 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/ConsumeAPI-MariaDB" class="project-link">
-                                <i class="fab fa-github"></i> Ver código
+                                <i class="fab fa-github"></i> <span data-i18n="link.ver-codigo">Ver código</span>
                             </a>
                             <a href="#" class="project-link">
-                                <i class="fas fa-database"></i> Base de datos
+                                <i class="fas fa-database"></i> <span data-i18n="proj.api.link2">Base de datos</span>
                             </a>
                         </div>
                     </div>
@@ -200,8 +206,8 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Gustashop - E-commerce</h3>
-                        <p class="project-description">
-                            E-commerce completo con React desarrollado como SPA (Single Page Application). 
+                        <p class="project-description" data-i18n="proj.gustashop.desc">
+                            E-commerce completo con React desarrollado como SPA (Single Page Application).
                             Incluye carrito de compras, gestión de productos, componentes reutilizables y estado global optimizado.
                         </p>
                         <div class="tech-tags">
@@ -212,10 +218,10 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/gustashop" class="project-link">
-                                <i class="fab fa-github"></i> Código fuente
+                                <i class="fab fa-github"></i> <span data-i18n="proj.gustashop.link1">Código fuente</span>
                             </a>
                             <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Sitio live
+                                <i class="fas fa-external-link-alt"></i> <span data-i18n="proj.gustashop.link2">Sitio live</span>
                             </a>
                         </div>
                     </div>
@@ -227,8 +233,8 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">CRUD-LOGIN Sistema</h3>
-                        <p class="project-description">
-                            Sistema completo de autenticación y gestión de usuarios desarrollado en PHP. 
+                        <p class="project-description" data-i18n="proj.crud.desc">
+                            Sistema completo de autenticación y gestión de usuarios desarrollado en PHP.
                             Implementa operaciones CRUD, sistema de login seguro, validaciones y manejo de sesiones.
                         </p>
                         <div class="tech-tags">
@@ -239,10 +245,10 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/CRUD-LOGIN" class="project-link">
-                                <i class="fab fa-github"></i> Ver código
+                                <i class="fab fa-github"></i> <span data-i18n="link.ver-codigo">Ver código</span>
                             </a>
                             <a href="https://escuelacrud.alwaysdata.net/views/login.php" class="project-link">
-                                <i class="fas fa-user-lock"></i> Demo login
+                                <i class="fas fa-user-lock"></i> <span data-i18n="link.demo-login">Demo login</span>
                             </a>
                         </div>
                     </div>
@@ -254,8 +260,8 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">TechStore E-commerce</h3>
-                        <p class="project-description">
-                            E-commerce de tecnología desarrollado con JavaScript y React. 
+                        <p class="project-description" data-i18n="proj.techstore.desc">
+                            E-commerce de tecnología desarrollado con JavaScript y React.
                             Catálogo de productos tech, carrito interactivo, gestión de productos y diseño responsive moderno.
                         </p>
                         <div class="tech-tags">
@@ -266,10 +272,10 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/techstore-ecommerce" class="project-link">
-                                <i class="fab fa-github"></i> Repositorio
+                                <i class="fab fa-github"></i> <span data-i18n="proj.techstore.link1">Repositorio</span>
                             </a>
                             <a href="https://jgastonmurua.github.io/techstore-ecommerce/" class="project-link">
-                                <i class="fas fa-shopping-cart"></i> Tienda online
+                                <i class="fas fa-shopping-cart"></i> <span data-i18n="proj.techstore.link2">Tienda online</span>
                             </a>
                         </div>
                     </div>
@@ -281,8 +287,8 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">JGastonMurua - Portfolio</h3>
-                        <p class="project-description">
-                            Portafolio personal desarrollado para mostrar proyectos, habilidades y experiencia profesional. 
+                        <p class="project-description" data-i18n="proj.portfolio.desc">
+                            Portafolio personal desarrollado para mostrar proyectos, habilidades y experiencia profesional.
                             Diseño responsive, animaciones fluidas y optimizado para conversión.
                         </p>
                         <div class="tech-tags">
@@ -293,10 +299,10 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/JGastonMurua/JGastonMurua" class="project-link">
-                                <i class="fab fa-github"></i> Ver portfolio
+                                <i class="fab fa-github"></i> <span data-i18n="proj.portfolio.link1">Ver portfolio</span>
                             </a>
                             <a href="https://jgastonmurua.github.io/Porfolio/" class="project-link">
-                                <i class="fas fa-globe"></i> Sitio web
+                                <i class="fas fa-globe"></i> <span data-i18n="proj.portfolio.link2">Sitio web</span>
                             </a>
                         </div>
                     </div>
@@ -307,10 +313,10 @@
 
     <section id="habilidades" class="section-scroll section--zoom">
         <div class="container">
-            <h2 class="section-title">Habilidades técnicas</h2>
+            <h2 class="section-title" data-i18n="skills.title">Habilidades técnicas</h2>
             <div class="skills-grid">
                 <div class="skill-category glass-card">
-                    <h3>Lenguajes</h3>
+                    <h3 data-i18n="skills.languages">Lenguajes</h3>
                     <div class="skill-list">
                         <span class="skill-item">Python</span>
                         <span class="skill-item">PHP</span>
@@ -320,7 +326,7 @@
                 </div>
 
                 <div class="skill-category glass-card">
-                    <h3>Frameworks y librerías</h3>
+                    <h3 data-i18n="skills.frameworks">Frameworks y librerías</h3>
                     <div class="skill-list">
                         <span class="skill-item">React</span>
                         <span class="skill-item">Bootstrap</span>
@@ -335,7 +341,7 @@
                 </div>
 
                 <div class="skill-category glass-card">
-                    <h3>Bases de datos</h3>
+                    <h3 data-i18n="skills.databases">Bases de datos</h3>
                     <div class="skill-list">
                         <span class="skill-item">MySQL</span>
                         <span class="skill-item">MariaDB</span>
@@ -344,7 +350,7 @@
                 </div>
 
                 <div class="skill-category glass-card">
-                    <h3>Herramientas</h3>
+                    <h3 data-i18n="skills.tools">Herramientas</h3>
                     <div class="skill-list">
                         <span class="skill-item">Git/GitHub</span>
                         <span class="skill-item">AWS</span>
@@ -355,7 +361,7 @@
                 </div>
 
                 <div class="skill-category glass-card">
-                    <h3>Automatización e IA</h3>
+                    <h3 data-i18n="skills.ai">Automatización e IA</h3>
                     <div class="skill-list">
                         <span class="skill-item">n8n</span>
                         <span class="skill-item">Automatizaciones</span>
@@ -364,7 +370,7 @@
                 </div>
 
                 <div class="skill-category glass-card">
-                    <h3>Metodologías</h3>
+                    <h3 data-i18n="skills.methodologies">Metodologías</h3>
                     <div class="skill-list">
                         <span class="skill-item">Scrum</span>
                         <span class="skill-item">Kanban</span>
@@ -373,7 +379,7 @@
                 </div>
 
                 <div class="skill-category glass-card">
-                    <h3>Especialidades</h3>
+                    <h3 data-i18n="skills.specialties">Especialidades</h3>
                     <div class="skill-list">
                         <span class="skill-item">IoT/Arduino</span>
                         <span class="skill-item">APIs REST</span>
@@ -385,7 +391,7 @@
                 </div>
 
                 <div class="skill-category glass-card">
-                    <h3>Plataformas y hosting</h3>
+                    <h3 data-i18n="skills.platforms">Plataformas y hosting</h3>
                     <div class="skill-list">
                         <span class="skill-item">Vercel</span>
                         <span class="skill-item">AlwaysData</span>
@@ -399,13 +405,13 @@
 
     <section id="experiencia" class="section-scroll section--slide-right">
         <div class="container">
-            <h2 class="section-title">Experiencia laboral</h2>
+            <h2 class="section-title" data-i18n="exp.title">Experiencia laboral</h2>
             <div class="timeline">
                 <div class="timeline-item timeline-left">
                     <div class="timeline-content glass-card">
-                        <h3 class="timeline-title">Fundador — GTresde (Impresión 3D)</h3>
+                        <h3 class="timeline-title" data-i18n="exp.gtresde.title">Fundador — GTresde (Impresión 3D)</h3>
                         <p class="timeline-period">GTresde · 2025 - Actualidad</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="exp.gtresde.desc">
                             Emprendimiento propio de impresión 3D. Diseño, producción y venta de piezas impresas en 3D.
                             Optimización de procesos mediante automatizaciones para escalar el negocio.
                         </p>
@@ -414,10 +420,10 @@
 
                 <div class="timeline-item timeline-right">
                     <div class="timeline-content glass-card">
-                        <h3 class="timeline-title">Chofer y operario</h3>
+                        <h3 class="timeline-title" data-i18n="exp.lesber.title">Chofer y operario</h3>
                         <p class="timeline-period">Lesber SRL · 2015 - 2025</p>
-                        <p class="timeline-description">
-                            Optimización de rutas, resolución de problemas en tiempo real, 
+                        <p class="timeline-description" data-i18n="exp.lesber.desc">
+                            Optimización de rutas, resolución de problemas en tiempo real,
                             interacción con clientes y gestión de carga y descarga.
                         </p>
                     </div>
@@ -425,10 +431,10 @@
 
                 <div class="timeline-item timeline-left">
                     <div class="timeline-content glass-card">
-                        <h3 class="timeline-title">Cadete de logística</h3>
+                        <h3 class="timeline-title" data-i18n="exp.jom.title">Cadete de logística</h3>
                         <p class="timeline-period">Logística JOM · 2011 - 2015</p>
-                        <p class="timeline-description">
-                            Gestión y organización de paquetes, uso de software de seguimiento, 
+                        <p class="timeline-description" data-i18n="exp.jom.desc">
+                            Gestión y organización de paquetes, uso de software de seguimiento,
                             atención y resolución de incidencias con clientes.
                         </p>
                     </div>
@@ -439,13 +445,13 @@
 
     <section id="educacion" class="section-scroll section--reveal-edu">
         <div class="container">
-            <h2 class="section-title">Educación y formación</h2>
+            <h2 class="section-title" data-i18n="edu.title">Educación y formación</h2>
             <div class="timeline timeline--edu">
                 <div class="timeline-item timeline-left">
                     <div class="timeline-content glass-card timeline-flip-inner">
-                        <h3 class="timeline-title">Técnico Superior en Desarrollo de Software</h3>
+                        <h3 class="timeline-title" data-i18n="edu.tsds.title">Técnico Superior en Desarrollo de Software</h3>
                         <p class="timeline-period">Instituto de Formación Técnica Superior N°4 · 2021 - 2024</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="edu.tsds.desc">
                             Formación integral en desarrollo de software con énfasis en metodologías ágiles y tecnologías modernas.
                         </p>
                     </div>
@@ -455,7 +461,7 @@
                     <div class="timeline-content glass-card timeline-flip-inner">
                         <h3 class="timeline-title">n8n y automatizaciones</h3>
                         <p class="timeline-period">2025 · EN CURSO</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="edu.n8n.desc">
                             Automatización de flujos de trabajo y procesos con n8n.
                         </p>
                     </div>
@@ -465,7 +471,7 @@
                     <div class="timeline-content glass-card timeline-flip-inner">
                         <h3 class="timeline-title">Ciberseguridad con IA</h3>
                         <p class="timeline-period">2025 · EN CURSO</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="edu.cyber.desc">
                             Seguridad informática, protección de sistemas y análisis de vulnerabilidades.
                         </p>
                     </div>
@@ -475,7 +481,7 @@
                     <div class="timeline-content glass-card timeline-flip-inner">
                         <h3 class="timeline-title">Marketing con IA</h3>
                         <p class="timeline-period">2025 · EN CURSO</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="edu.marketing.desc">
                             Estrategias de marketing digital potenciadas con inteligencia artificial.
                         </p>
                     </div>
@@ -485,7 +491,7 @@
                     <div class="timeline-content glass-card timeline-flip-inner">
                         <h3 class="timeline-title">QA Testing</h3>
                         <p class="timeline-period">2025</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="edu.qa.desc">
                             Testing manual y automatizado de software.
                         </p>
                     </div>
@@ -495,7 +501,7 @@
                     <div class="timeline-content glass-card timeline-flip-inner">
                         <h3 class="timeline-title">Node.js Development</h3>
                         <p class="timeline-period">2025</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="edu.nodejs.desc">
                             Desarrollo backend con JavaScript y Node.js.
                         </p>
                     </div>
@@ -505,7 +511,7 @@
                     <div class="timeline-content glass-card timeline-flip-inner">
                         <h3 class="timeline-title">React</h3>
                         <p class="timeline-period">TalentoTech · 2025</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="edu.react.desc">
                             Desarrollo de interfaces de usuario con React.
                         </p>
                     </div>
@@ -515,7 +521,7 @@
                     <div class="timeline-content glass-card timeline-flip-inner">
                         <h3 class="timeline-title">PHP con MySQL</h3>
                         <p class="timeline-period">Tecno3F · 2025</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="edu.php.desc">
                             Desarrollo backend con PHP y bases de datos MySQL.
                         </p>
                     </div>
@@ -523,9 +529,9 @@
 
                 <div class="timeline-item timeline-left">
                     <div class="timeline-content glass-card timeline-flip-inner">
-                        <h3 class="timeline-title">Curso de IoT y robótica</h3>
+                        <h3 class="timeline-title" data-i18n="edu.iot.title">Curso de IoT y robótica</h3>
                         <p class="timeline-period">Tecno3F · 2024</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="edu.iot.desc">
                             Internet de las Cosas e introducción a la robótica con aplicaciones prácticas.
                         </p>
                     </div>
@@ -533,9 +539,9 @@
 
                 <div class="timeline-item timeline-right">
                     <div class="timeline-content glass-card timeline-flip-inner">
-                        <h3 class="timeline-title">Fundamentos de AWS</h3>
+                        <h3 class="timeline-title" data-i18n="edu.aws.title">Fundamentos de AWS</h3>
                         <p class="timeline-period">AWS Academy · 2023</p>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="edu.aws.desc">
                             Computación en la nube y servicios de Amazon Web Services.
                         </p>
                     </div>
@@ -543,12 +549,12 @@
             </div>
 
             <div class="education-metas glass-card" aria-label="Metas 2026">
-                <h3 class="metas-title">Metas 2026</h3>
+                <h3 class="metas-title" data-i18n="edu.goals.title">Metas 2026</h3>
                 <ul class="metas-list">
-                    <li>Dominar Inteligencia Artificial completamente</li>
-                    <li>Certificaciones en IA y automatizaciones</li>
-                    <li>Especializarse en Ciberseguridad</li>
-                    <li>Consolidar servicios freelance de automatización</li>
+                    <li data-i18n="edu.goal1">Dominar Inteligencia Artificial completamente</li>
+                    <li data-i18n="edu.goal2">Certificaciones en IA y automatizaciones</li>
+                    <li data-i18n="edu.goal3">Especializarse en Ciberseguridad</li>
+                    <li data-i18n="edu.goal4">Consolidar servicios freelance de automatización</li>
                 </ul>
             </div>
         </div>
@@ -558,56 +564,56 @@
     <!-- SERVICIOS -->
     <section id="servicios" class="section-scroll section--rise">
         <div class="container">
-            <h2 class="section-title">Servicios</h2>
-            <p class="section-subtitle">Soluciones a medida para tu negocio. Trabajamos juntos desde la idea hasta el resultado.</p>
+            <h2 class="section-title" data-i18n="services.title">Servicios</h2>
+            <p class="section-subtitle" data-i18n="services.subtitle">Soluciones a medida para tu negocio. Trabajamos juntos desde la idea hasta el resultado.</p>
             <div class="services-grid">
 
                 <div class="service-card glass-card">
                     <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3 class="service-title">Landing Page Profesional</h3>
-                    <p class="service-desc">Sitio web de una página optimizado para convertir visitas en clientes. Diseño responsive, rápido y con SEO incluido.</p>
+                    <h3 class="service-title" data-i18n="srv.landing.title">Landing Page Profesional</h3>
+                    <p class="service-desc" data-i18n="srv.landing.desc">Sitio web de una página optimizado para convertir visitas en clientes. Diseño responsive, rápido y con SEO incluido.</p>
                     <div class="service-price">desde <span>$300 USD</span></div>
-                    <a href="#contacto" class="service-cta">Consultar</a>
+                    <a href="#contacto" class="service-cta" data-i18n="srv.cta">Consultar</a>
                 </div>
 
                 <div class="service-card glass-card">
                     <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
-                    <h3 class="service-title">E-commerce Completo</h3>
-                    <p class="service-desc">Tienda online con catálogo, carrito, pagos y panel de administración. Lista para vender desde el primer día.</p>
+                    <h3 class="service-title" data-i18n="srv.ecommerce.title">E-commerce Completo</h3>
+                    <p class="service-desc" data-i18n="srv.ecommerce.desc">Tienda online con catálogo, carrito, pagos y panel de administración. Lista para vender desde el primer día.</p>
                     <div class="service-price">desde <span>$1,500 USD</span></div>
-                    <a href="#contacto" class="service-cta">Consultar</a>
+                    <a href="#contacto" class="service-cta" data-i18n="srv.cta">Consultar</a>
                 </div>
 
                 <div class="service-card glass-card">
                     <div class="service-icon"><i class="fas fa-robot"></i></div>
-                    <h3 class="service-title">Automatizaciones con n8n</h3>
-                    <p class="service-desc">Automatizá procesos repetitivos: emails, reportes, sincronización entre sistemas, notificaciones y más.</p>
+                    <h3 class="service-title" data-i18n="srv.n8n.title">Automatizaciones con n8n</h3>
+                    <p class="service-desc" data-i18n="srv.n8n.desc">Automatizá procesos repetitivos: emails, reportes, sincronización entre sistemas, notificaciones y más.</p>
                     <div class="service-price">desde <span>$200 USD</span></div>
-                    <a href="#contacto" class="service-cta">Consultar</a>
+                    <a href="#contacto" class="service-cta" data-i18n="srv.cta">Consultar</a>
                 </div>
 
                 <div class="service-card glass-card">
                     <div class="service-icon"><i class="fas fa-brain"></i></div>
-                    <h3 class="service-title">Chatbot con IA</h3>
-                    <p class="service-desc">Asistente inteligente para tu negocio integrado con Claude o GPT. Responde consultas, califica leads y atiende 24/7.</p>
+                    <h3 class="service-title" data-i18n="srv.chatbot.title">Chatbot con IA</h3>
+                    <p class="service-desc" data-i18n="srv.chatbot.desc">Asistente inteligente para tu negocio integrado con Claude o GPT. Responde consultas, califica leads y atiende 24/7.</p>
                     <div class="service-price">desde <span>$500 USD</span></div>
-                    <a href="#contacto" class="service-cta">Consultar</a>
+                    <a href="#contacto" class="service-cta" data-i18n="srv.cta">Consultar</a>
                 </div>
 
                 <div class="service-card glass-card">
                     <div class="service-icon"><i class="fas fa-plug"></i></div>
-                    <h3 class="service-title">Integración de APIs</h3>
-                    <p class="service-desc">Conectá tus herramientas y sistemas entre sí. Integraciones con cualquier API REST: pagos, CRM, logística, redes sociales.</p>
+                    <h3 class="service-title" data-i18n="srv.api.title">Integración de APIs</h3>
+                    <p class="service-desc" data-i18n="srv.api.desc">Conectá tus herramientas y sistemas entre sí. Integraciones con cualquier API REST: pagos, CRM, logística, redes sociales.</p>
                     <div class="service-price">desde <span>$200 USD</span></div>
-                    <a href="#contacto" class="service-cta">Consultar</a>
+                    <a href="#contacto" class="service-cta" data-i18n="srv.cta">Consultar</a>
                 </div>
 
                 <div class="service-card glass-card">
                     <div class="service-icon"><i class="fas fa-tools"></i></div>
-                    <h3 class="service-title">Mantenimiento Web</h3>
-                    <p class="service-desc">Soporte técnico mensual para tu sitio: actualizaciones, backups, corrección de errores y mejoras continuas.</p>
+                    <h3 class="service-title" data-i18n="srv.maintenance.title">Mantenimiento Web</h3>
+                    <p class="service-desc" data-i18n="srv.maintenance.desc">Soporte técnico mensual para tu sitio: actualizaciones, backups, corrección de errores y mejoras continuas.</p>
                     <div class="service-price">desde <span>$100 USD</span><small>/mes</small></div>
-                    <a href="#contacto" class="service-cta">Consultar</a>
+                    <a href="#contacto" class="service-cta" data-i18n="srv.cta">Consultar</a>
                 </div>
 
             </div>
@@ -617,15 +623,15 @@
     <!-- CONTACTO -->
     <section id="contacto" class="section-scroll section--fade">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <p class="section-subtitle">¿Tenés un proyecto en mente? Contame de qué se trata y te respondo en menos de 24 horas.</p>
+            <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">¿Tenés un proyecto en mente? Contame de qué se trata y te respondo en menos de 24 horas.</p>
             <div class="contact-grid">
 
                 <div class="contact-info-block glass-card">
-                    <h3>Hablemos</h3>
+                    <h3 data-i18n="contact.hablemos">Hablemos</h3>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <a href="mailto:gaston.murua@gmail.com">gaston.murua@gmail.com</a>
+                        <a href="mailto:gastton.murua@gmail.com">gastton.murua@gmail.com</a>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
@@ -633,7 +639,7 @@
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-whatsapp"></i>
-                        <a href="https://wa.me/5491130484275" target="_blank" rel="noopener noreferrer">WhatsApp directo</a>
+                        <a href="https://wa.me/5491130484275" target="_blank" rel="noopener noreferrer" data-i18n="contact.wa">WhatsApp directo</a>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
@@ -645,28 +651,28 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Merlo, Zona Oeste · Buenos Aires, Argentina</span>
+                        <span data-i18n="contact.location">Merlo, Zona Oeste · Buenos Aires, Argentina</span>
                     </div>
                 </div>
 
                 <form class="contact-form glass-card" action="https://formspree.io/f/xojpedlq" method="POST">
                     <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                        <label for="nombre" data-i18n="form.nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" data-i18n-placeholder="form.nombre.ph" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email" data-i18n="form.email">Email</label>
                         <input type="email" id="email" name="email" placeholder="tu@email.com" required>
                     </div>
                     <div class="form-group">
-                        <label for="asunto">Asunto</label>
-                        <input type="text" id="asunto" name="asunto" placeholder="¿De qué se trata?" required>
+                        <label for="asunto" data-i18n="form.asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="¿De qué se trata?" data-i18n-placeholder="form.asunto.ph" required>
                     </div>
                     <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contame tu proyecto o consulta..." required></textarea>
+                        <label for="mensaje" data-i18n="form.mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contame tu proyecto o consulta..." data-i18n-placeholder="form.mensaje.ph" required></textarea>
                     </div>
-                    <button type="submit" class="form-submit">
+                    <button type="submit" class="form-submit" data-i18n-html="form.submit">
                         <i class="fas fa-paper-plane"></i> Enviar mensaje
                     </button>
                 </form>
@@ -678,14 +684,14 @@
     <!-- ARCADE -->
     <section id="arcade" class="game-section game-section--flappy section-scroll">
         <div class="container">
-            <h2 class="section-title">Arcade</h2>
+            <h2 class="section-title" data-i18n="arcade.title">Arcade</h2>
             <div class="game-shell glass-card no-hover" style="max-width:500px;margin:0 auto;border-radius:24px;border:3px solid rgba(255,255,255,0.08);padding:1.2rem 1.2rem 1.5rem;">
                 <div class="game-hud" style="display:flex;justify-content:space-between;margin-bottom:0.5rem;font-family:'Press Start 2P',monospace;font-size:0.65rem;letter-spacing:1px;">
-                    <div class="game-hud__item">Puntaje: <span id="flappy-score">0</span></div>
-                    <div class="game-hud__item">Récord: <span id="flappy-record">0</span></div>
+                    <div class="game-hud__item"><span data-i18n="arcade.score">Puntaje:</span> <span id="flappy-score">0</span></div>
+                    <div class="game-hud__item"><span data-i18n="arcade.record">Récord:</span> <span id="flappy-record">0</span></div>
                 </div>
                 <canvas id="flappy-canvas" class="game-canvas" width="400" height="360" style="width:100%;border-radius:10px;border:2px solid rgba(255,255,255,0.1);display:block;" aria-label="Juego Flappy Bird"></canvas>
-                <p class="game-instructions" style="font-family:'Press Start 2P',monospace;font-size:0.5rem;text-align:center;margin:0.5rem 0 0.4rem;opacity:0.7;">Flechas/WASD + ESPACIO para disparar</p>
+                <p class="game-instructions" style="font-family:'Press Start 2P',monospace;font-size:0.5rem;text-align:center;margin:0.5rem 0 0.4rem;opacity:0.7;" data-i18n="arcade.instructions">Flechas/WASD + ESPACIO para disparar</p>
                 <div class="pixel-controls">
                     <div class="pixel-dpad">
                         <button type="button" class="pixel-btn pixel-btn--up" id="flappy-up">
@@ -716,8 +722,8 @@
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-left">
-                    <p>&copy; 2026 Jorge Gastón Murúa. Desarrollado con dedicación.</p>
-                    <p>¿Trabajamos juntos? Contactame por email o LinkedIn.</p>
+                    <p data-i18n="footer.p1">&copy; 2026 Jorge Gastón Murúa. Desarrollado con dedicación.</p>
+                    <p data-i18n="footer.p2">¿Trabajamos juntos? Contactame por email o LinkedIn.</p>
                 </div>
                 <div class="footer-right">
                     <span id="visit-counter" class="visit-counter">Visitas al sitio: 0</span>

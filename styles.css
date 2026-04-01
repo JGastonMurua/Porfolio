@@ -94,6 +94,36 @@ body {
 }
 
 /* ========== Toggle tema ========== */
+.lang-toggle {
+    position: fixed;
+    top: max(1rem, env(safe-area-inset-top));
+    right: calc(max(1.4rem, env(safe-area-inset-right)) + 62px);
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border: 1.5px solid var(--text-secondary);
+    border-radius: 999px;
+    background: var(--bg-elevated);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    transition: border-color 0.25s, background 0.25s, color 0.25s, transform 0.2s;
+}
+.lang-toggle:hover {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+    transform: scale(1.04);
+}
+.lang-sep { opacity: 0.3; }
+.lang-opt { transition: color 0.25s; }
+.lang-opt--active { color: var(--text-primary); font-weight: 700; }
+
 .theme-toggle {
     position: fixed;
     top: max(1rem, env(safe-area-inset-top));

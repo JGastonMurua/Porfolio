@@ -8,7 +8,7 @@ Portfolio web profesional de Jorge Gastón Murúa, Técnico Superior en Desarrol
 
 ## Descripción
 
-Sitio web personal que muestra proyectos, habilidades técnicas, experiencia laboral, formación académica y servicios freelance. Desarrollado con tecnologías web modernas, diseño responsive y una estética cuidada con modo oscuro/claro.
+Sitio web personal que muestra proyectos, habilidades técnicas, experiencia laboral, formación académica y servicios freelance. Desarrollado con tecnologías web modernas, diseño responsive y una estética cuidada con modo oscuro/claro y soporte multiidioma (español/inglés).
 
 ---
 
@@ -26,12 +26,13 @@ Sitio web personal que muestra proyectos, habilidades técnicas, experiencia lab
 ## Características
 
 - Modo oscuro / claro con persistencia en localStorage
+- **Cambio de idioma ES / EN** con persistencia en localStorage (todo el contenido traducido)
 - Animaciones de scroll con IntersectionObserver
 - Efecto typewriter en el hero
 - Partículas animadas en modo oscuro
 - Menú hamburguesa con drawer lateral en mobile
 - Indicador de sección actual al scrollear (mobile)
-- Formulario de contacto funcional vía Formspree
+- Formulario de contacto funcional vía Formspree (mensajes adaptados al idioma activo)
 - CV descargable en PDF
 - Juego arcade Galaxy Shooter integrado con controles pixel-art 8-bit
 - SEO optimizado: meta tags, Open Graph, Twitter Cards, Schema.org
@@ -80,7 +81,7 @@ Sitio web personal que muestra proyectos, habilidades técnicas, experiencia lab
 
 ## Contacto
 
-- **Email:** gaston.murua@gmail.com
+- **Email:** gastton.murua@gmail.com
 - **Teléfono:** +54 9 11 3048-4275
 - **WhatsApp:** [Contactar](https://wa.me/5491130484275)
 - **GitHub:** [JGastonMurua](https://github.com/JGastonMurua)
