@@ -1,6 +1,6 @@
 # Portfolio Personal — Jorge Gastón Murúa
 
-Portfolio web profesional de Jorge Gastón Murúa, Técnico Superior en Desarrollo de Software, especialista en automatizaciones con n8n e inteligencia artificial.
+Portfolio web profesional de Jorge Gastón Murúa, desarrollador web fullstack con más de 10 años de experiencia en resolución de problemas, especializado en automatizaciones con n8n, agentes de IA y desarrollo fullstack.
 
 🌐 **Live:** [jgastonmurua.github.io/Porfolio](https://jgastonmurua.github.io/Porfolio/)
 
@@ -8,16 +8,16 @@ Portfolio web profesional de Jorge Gastón Murúa, Técnico Superior en Desarrol
 
 ## Descripción
 
-Sitio web personal que muestra proyectos, habilidades técnicas, experiencia laboral, formación académica y servicios freelance. Desarrollado con tecnologías web modernas, diseño responsive y una estética cuidada con modo oscuro/claro y soporte multiidioma (español/inglés).
+Sitio web personal que muestra proyectos, habilidades técnicas, experiencia laboral, formación académica y servicios freelance. Desarrollado con tecnologías web modernas, diseño responsive, modo oscuro/claro y soporte multiidioma (español/inglés).
 
 ---
 
 ## Tecnologías utilizadas
 
 - **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
-- **Diseño:** CSS Grid, Flexbox, animaciones CSS, modo oscuro/claro
+- **Diseño:** CSS Grid, Flexbox, animaciones CSS, Canvas API, modo oscuro/claro
 - **Iconos:** Font Awesome 6
-- **Tipografías:** Google Fonts (Inter, Space Grotesk, Press Start 2P)
+- **Tipografías:** Google Fonts (Inter, Space Grotesk)
 - **Formulario de contacto:** Formspree
 - **Despliegue:** GitHub Pages
 
@@ -26,15 +26,14 @@ Sitio web personal que muestra proyectos, habilidades técnicas, experiencia lab
 ## Características
 
 - Modo oscuro / claro con persistencia en localStorage
-- **Cambio de idioma ES / EN** con persistencia en localStorage (todo el contenido traducido)
-- Animaciones de scroll con IntersectionObserver
+- **Cambio de idioma ES / EN** con persistencia en localStorage
+- Animaciones de partículas (estrellas) en modo oscuro con Canvas API
 - Efecto typewriter en el hero
-- Partículas animadas en modo oscuro
+- Animaciones de scroll con IntersectionObserver
 - Menú hamburguesa con drawer lateral en mobile
-- Indicador de sección actual al scrollear (mobile)
-- Formulario de contacto funcional vía Formspree (mensajes adaptados al idioma activo)
+- Indicador de sección actual al scrollear
+- Formulario de contacto funcional vía Formspree
 - CV descargable en PDF
-- Juego arcade Galaxy Shooter integrado con controles pixel-art 8-bit
 - SEO optimizado: meta tags, Open Graph, Twitter Cards, Schema.org
 - Totalmente responsive (mobile-first)
 
@@ -43,14 +42,13 @@ Sitio web personal que muestra proyectos, habilidades técnicas, experiencia lab
 ## Secciones
 
 - **Inicio:** Presentación, contacto directo y descarga de CV
-- **Sobre mí:** Background profesional y objetivos
-- **Proyectos:** Trabajos desarrollados con links a demos y código
-- **Habilidades:** Stack tecnológico completo
+- **Sobre mí:** Background profesional y propuesta de valor
+- **Proyectos:** Trabajos destacados con links a demos y código
+- **Habilidades:** Stack tecnológico completo incluyendo IA y automatizaciones
 - **Experiencia:** Historial laboral
-- **Educación:** Formación académica y cursos
+- **Educación:** Formación académica y cursos en curso
 - **Servicios:** Servicios freelance con precios en USD
-- **Contacto:** Formulario de contacto + información de contacto
-- **Arcade:** Juego Galaxy Shooter con controles pixel-art
+- **Contacto:** Formulario + información de contacto directa
 
 ---
 
@@ -59,10 +57,9 @@ Sitio web personal que muestra proyectos, habilidades técnicas, experiencia lab
 | Proyecto | Tecnologías | Demo |
 |---|---|---|
 | TechStore E-commerce | React, JS, PHP, MySQL | [Ver demo](https://jgastonmurua.github.io/techstore-ecommerce/) |
-| CRUD-LOGIN Sistema | PHP, MySQL | [Ver demo](https://escuelacrud.alwaysdata.net/views/login.php) |
-| Sala Chat Python | Python, Sockets, Threading | [Ver código](https://github.com/JGastonMurua/sala-chat-python) |
-| ConsumeAPI-MariaDB | Python, REST APIs, MariaDB | [Ver código](https://github.com/JGastonMurua/ConsumeAPI-MariaDB) |
-| Gustashop E-commerce | React, JavaScript, CSS3 | [Ver código](https://github.com/JGastonMurua/gustashop) |
+| Boxeo Universal Park | HTML5, CSS3, JS | [Ver sitio](https://boxeouniversalpark.vercel.app/) |
+| Backend Node.js | Node.js, Express, JWT | [Ver código](https://github.com/JGastonMurua/backendnodejsfinal) |
+| Portfolio Personal | HTML5, CSS3, JS, Canvas API | [Ver sitio](https://jgastonmurua.github.io/Porfolio/) |
 
 ---
 
@@ -70,12 +67,13 @@ Sitio web personal que muestra proyectos, habilidades técnicas, experiencia lab
 
 | Servicio | Desde |
 |---|---|
-| Landing page profesional | $300 USD |
-| E-commerce completo | $1,500 USD |
-| Automatizaciones con n8n | $200 USD |
-| Chatbot con IA (Claude/GPT) | $500 USD |
-| Integración de APIs | $200 USD |
-| Mantenimiento web mensual | $100 USD/mes |
+| Páginas Web Profesionales | $150 USD |
+| Tiendas Online a Medida | $600 USD |
+| Automatización de Procesos con IA | $120 USD |
+| Chatbots Inteligentes con IA | $250 USD |
+| Conexión de Sistemas y Apps | $120 USD |
+| Soporte Web Mensual | $60 USD/mes |
+| CRM con Dashboard para Empresas | $800 USD |
 
 ---
 
