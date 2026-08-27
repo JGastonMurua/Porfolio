@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jgastonmurua.github.io/Porfolio/sitemap.xml
+Sitemap: https://jorge-gaston-murua.gtresia.com/sitemap.xml
