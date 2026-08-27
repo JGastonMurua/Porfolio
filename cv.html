@@ -125,21 +125,29 @@
         }
 
         /* ===== SKILLS ===== */
+        /* Una sola columna a propósito: los ATS leen por posición en la página
+           y un layout de 2 columnas mezcla el orden de lectura. */
         .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
         }
 
         .skill-group-title {
             font-weight: 700;
             font-size: 10pt;
             color: #0a0a0a;
+            display: inline;
         }
 
         .skill-group-items {
             font-size: 10pt;
             color: #333;
+            display: inline;
+        }
+
+        .skill-group-title::after {
+            content: ": ";
         }
 
         /* ===== PROYECTOS ===== */
@@ -221,7 +229,7 @@
     <!-- HEADER -->
     <header class="cv-header">
         <div class="cv-name">Jorge Gastón Murúa</div>
-        <div class="cv-title">Desarrollador Web Fullstack Junior · Especialista en Automatizaciones e IA</div>
+        <div class="cv-title">Desarrollador Web Fullstack · Especialista en Automatizaciones e IA</div>
         <div class="cv-contact">
             <span>📍 Merlo, Buenos Aires, Argentina</span>
             <span>📞 <a href="tel:+5491130484275">+54 9 11 3048-4275</a></span>
@@ -236,7 +244,7 @@
     <section class="cv-section">
         <div class="cv-section-title">Resumen profesional</div>
         <p class="cv-summary">
-            Técnico Superior en Desarrollo de Software (graduado diciembre 2024) con más de 10 años de experiencia previa en logística y operaciones. Me especializo en <strong>desarrollo web fullstack</strong>, <strong>automatizaciones con n8n</strong> e <strong>integración de inteligencia artificial</strong> (Claude API). Capaz de entregar soluciones técnicas completas de forma autónoma, con fuerte orientación a resultados y aprendizaje continuo. Busco mi primera oportunidad como Developer Junior y ofrezco servicios freelance de desarrollo y automatización.
+            Técnico Superior en Desarrollo de Software (graduado diciembre 2024) con más de 10 años de experiencia previa en logística y operaciones. Me especializo en <strong>desarrollo web fullstack</strong>, <strong>automatizaciones con n8n</strong> e <strong>integración de inteligencia artificial</strong> (Claude API). Diseño, desarrollo y mantengo en producción mis propios proyectos (GTresD, GTresIA), entregando soluciones técnicas completas de forma autónoma. Busco sumarme como Developer a un equipo de desarrollo.
         </p>
     </section>
 
@@ -280,7 +288,7 @@
                 <div class="cv-item-title">Fundador y desarrollador</div>
                 <div class="cv-item-period">2025 – Actualidad</div>
             </div>
-            <div class="cv-item-subtitle">GTresde — Emprendimiento de Impresión 3D (Merlo, Buenos Aires)</div>
+            <div class="cv-item-subtitle">GTresD — Emprendimiento de Impresión 3D (Merlo, Buenos Aires)</div>
             <div class="cv-item-desc">
                 <ul>
                     <li>Diseño, producción y comercialización de piezas impresas en 3D.</li>
@@ -326,11 +334,20 @@
 
         <div class="cv-project">
             <div class="cv-project-title">
-                TechStore E-commerce
-                <a href="https://jgastonmurua.github.io/techstore-ecommerce/">Ver demo →</a>
+                GTresIA
+                <a href="https://gtresia.com">Ver sitio →</a>
             </div>
-            <div class="cv-project-desc">E-commerce fullstack con catálogo de productos, carrito interactivo y diseño responsive. Frontend React + backend PHP + MySQL.</div>
-            <div class="cv-tags">React · JavaScript · PHP · MySQL</div>
+            <div class="cv-project-desc">Agencia propia de automatización con inteligencia artificial para PyMEs. Flujos con n8n y agentes de IA en producción.</div>
+            <div class="cv-tags">Next.js · TypeScript · n8n · IA / LLMs</div>
+        </div>
+
+        <div class="cv-project">
+            <div class="cv-project-title">
+                GTresD
+                <a href="https://gtresd.com">Ver sitio →</a>
+            </div>
+            <div class="cv-project-desc">Emprendimiento propio de impresión 3D personalizada. Tienda online con catálogo, pedidos a medida y venta en Mercado Libre. 5.0 en reseñas de Google.</div>
+            <div class="cv-tags">Next.js · React · E-commerce</div>
         </div>
 
         <div class="cv-project">
@@ -344,20 +361,11 @@
 
         <div class="cv-project">
             <div class="cv-project-title">
-                Backend Node.js
-                <a href="https://github.com/JGastonMurua/backendnodejsfinal">Ver código →</a>
+                TechStore E-commerce
+                <a href="https://jgastonmurua.github.io/techstore-ecommerce/">Ver demo →</a>
             </div>
-            <div class="cv-project-desc">API REST con Node.js y Express. Incluye autenticación JWT, operaciones CRUD y rutas protegidas.</div>
-            <div class="cv-tags">Node.js · Express · JWT · API REST</div>
-        </div>
-
-        <div class="cv-project">
-            <div class="cv-project-title">
-                Portfolio Personal
-                <a href="https://jgastonmurua.github.io/Porfolio/">Ver sitio →</a>
-            </div>
-            <div class="cv-project-desc">Portfolio con dark/light mode, bilingüe ES/EN, animaciones canvas y sección de servicios. 100% vanilla JS sin frameworks.</div>
-            <div class="cv-tags">HTML5 · CSS3 · JavaScript · Canvas API</div>
+            <div class="cv-project-desc">E-commerce fullstack con catálogo de productos, carrito interactivo y diseño responsive. Frontend React + backend PHP + MySQL.</div>
+            <div class="cv-tags">React · JavaScript · PHP · MySQL</div>
         </div>
     </section>
 
