@@ -49,15 +49,27 @@
         .cv-contact {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px 24px;
-            margin-top: 10px;
+            align-items: center;
+            gap: 6px 10px;
+            margin-top: 8px;
             font-size: 9.5pt;
             color: #333;
+        }
+
+        .cv-contact-links {
+            margin-top: 4px;
+        }
+
+        .cv-contact span:not(:last-child)::after {
+            content: '·';
+            margin-left: 10px;
+            color: #b5762b;
         }
 
         .cv-contact a {
             color: #b5762b;
             text-decoration: none;
+            font-weight: 600;
         }
 
         /* ===== SECCIONES ===== */
@@ -241,9 +253,11 @@
             <span>Merlo, Buenos Aires, Argentina</span>
             <span><a href="tel:+5491130484275">+54 9 11 3048-4275</a></span>
             <span><a href="mailto:gastton.murua@gmail.com">gastton.murua@gmail.com</a></span>
-            <span><a href="https://linkedin.com/in/jgastonmurua">linkedin.com/in/jgastonmurua</a></span>
-            <span><a href="https://github.com/JGastonMurua">github.com/JGastonMurua</a></span>
-            <span><a href="https://jorge-gaston-murua.gtresia.com/">jorge-gaston-murua.gtresia.com</a></span>
+        </div>
+        <div class="cv-contact cv-contact-links">
+            <span><a href="https://linkedin.com/in/jgastonmurua">LinkedIn</a></span>
+            <span><a href="https://github.com/JGastonMurua">GitHub</a></span>
+            <span><a href="https://jorge-gaston-murua.gtresia.com/">Portfolio</a></span>
         </div>
     </header>
 
@@ -251,7 +265,7 @@
     <section class="cv-section">
         <div class="cv-section-title">Resumen profesional</div>
         <p class="cv-summary">
-            Técnico Superior en Desarrollo de Software (graduado diciembre 2024) con más de 10 años de experiencia previa en logística y operaciones. Me especializo en <strong>desarrollo web fullstack</strong>, <strong>automatizaciones con n8n</strong> e <strong>integración de inteligencia artificial</strong> (Claude API). Diseño, desarrollo y mantengo en producción mis propios proyectos (GTresD, GTresIA), entregando soluciones técnicas completas de forma autónoma. Busco sumarme como Developer a un equipo de desarrollo.
+            Técnico Superior en Desarrollo de Software (graduado diciembre 2024) con más de 10 años de experiencia previa en logística y operaciones. Me especializo en <strong>desarrollo web fullstack</strong>, <strong>automatizaciones con n8n</strong> e <strong>integración de inteligencia artificial</strong> (Claude API). Diseño, desarrollo y mantengo en producción mis propios proyectos (GTresD, GTresIA), entregando soluciones técnicas completas de forma autónoma.
         </p>
     </section>
 
@@ -261,15 +275,15 @@
         <div class="skills-grid">
             <div>
                 <div class="skill-group-title">Lenguajes</div>
-                <div class="skill-group-items">Python, JavaScript, PHP, HTML5, CSS3</div>
+                <div class="skill-group-items">Python, JavaScript, TypeScript, PHP, HTML5, CSS3</div>
             </div>
             <div>
                 <div class="skill-group-title">Frameworks y librerías</div>
-                <div class="skill-group-items">React, Vue.js, Symfony, Bootstrap, Tailwind CSS, jQuery, PHPUnit, PHPMailer</div>
+                <div class="skill-group-items">React, Next.js, Vue.js, Symfony, Bootstrap, Tailwind CSS, jQuery, PHPUnit, PHPMailer</div>
             </div>
             <div>
                 <div class="skill-group-title">Bases de datos</div>
-                <div class="skill-group-items">MySQL, MariaDB, PostgreSQL</div>
+                <div class="skill-group-items">MySQL, MariaDB, PostgreSQL, Supabase</div>
             </div>
             <div>
                 <div class="skill-group-title">Herramientas y plataformas</div>
@@ -281,7 +295,7 @@
             </div>
             <div>
                 <div class="skill-group-title">Otras áreas</div>
-                <div class="skill-group-items">IoT / Arduino, Ciberseguridad, QA Testing manual, Scrum, Kanban</div>
+                <div class="skill-group-items">IoT / Arduino, Ciberseguridad, QA Testing manual y automatizado (Playwright, Selenium), Scrum, Kanban</div>
             </div>
         </div>
     </section>
@@ -395,15 +409,15 @@
             </div>
             <div class="cv-item-desc">
                 <ul>
+                    <li>Fundamentos de AWS — AWS Academy (2023)</li>
+                    <li>IoT y Robótica con Arduino — Tecno3F (2024)</li>
                     <li>React — TalentoTech (2025)</li>
                     <li>PHP con MySQL — Tecno3F (2025)</li>
                     <li>Node.js Development (2025)</li>
-                    <li>n8n y automatizaciones de flujos de trabajo (2026 · en curso)</li>
-                    <li>Ciberseguridad con IA (2026 · en curso)</li>
-                    <li>Marketing digital con IA (2026 · en curso)</li>
-                    <li>QA Testing manual y automatizado (2025)</li>
-                    <li>IoT y Robótica con Arduino — Tecno3F (2024)</li>
-                    <li>Fundamentos de AWS — AWS Academy (2023)</li>
+                    <li>QA Testing manual y automatizado con Playwright y Selenium (2025)</li>
+                    <li>n8n y automatizaciones de flujos de trabajo (2026 · autodidacta)</li>
+                    <li>Ciberseguridad con IA (2026 · autodidacta)</li>
+                    <li>Marketing digital con IA (2026 · autodidacta)</li>
                 </ul>
             </div>
         </div>

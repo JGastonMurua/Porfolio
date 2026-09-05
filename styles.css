@@ -970,7 +970,7 @@ section {
 /* ========== Skills ========== */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
 }
 
@@ -1418,6 +1418,10 @@ footer p+p {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1437,6 +1441,10 @@ footer p+p {
     .nav-link {
         font-size: 0.72rem;
         padding: 8px 12px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
     }
 
     .timeline::before {
