@@ -97,7 +97,7 @@ porfolio/
 ├── CV — Jorge Gastón Murúa.pdf  # CV descargable
 ├── styles.css               # Estilos globales
 ├── script.js                # Lógica e interacciones
-├── mi-foto.png              # Foto de perfil
+├── mi-foto.jpg              # Foto de perfil
 └── README.md                # Este archivo
 ```
 
